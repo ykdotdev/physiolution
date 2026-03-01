@@ -12,10 +12,18 @@ import { useToast } from "@/components/ToastProvider";
 import InputError from "@/components/InputError";
 import Image from "next/image";
 
-const CheckoutClient = ({ product }) => {
+const CheckoutClient = ({ product}) => {
+  
   const router = useRouter();
   const { showToast } = useToast();
   const [infoActive, setInfoActive] = useState(false);
+
+  useEffect(() => {
+    if (!(product?.current_stock > product?.reserved_stock)) {
+      showToast("Item Out of Stock", "error");
+      router.push("/products/tbmm-ces");
+    }
+  }, []);
   // console.log("info", infoActive)
   // console.log("product", product)
   const {
@@ -72,28 +80,6 @@ const CheckoutClient = ({ product }) => {
 
     calculateTotals();
   }, [currentQty]);
-
-  useEffect(() => {
-    const checkStock = async () => {
-      const stockCheckRes = await fetch("/api/supabase/stockCheck", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          product_id: product.id,
-        }),
-      });
-
-      const stockCheck = await stockCheckRes.json();
-
-      if (!stockCheck.success) {
-        console.log("INSUFFICIENT STOCK");
-        await showToast("Item just went Out of Stock", "error");
-        router.push("/products/tbmm-ces");
-      }
-    };
-
-    checkStock();
-  }, []);
 
   const loadRazorpay = () => {
     return new Promise((resolve) => {

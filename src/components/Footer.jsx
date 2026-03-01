@@ -17,9 +17,16 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.topCtn}>
         <div className={styles.footerLogoCtn}>
-          <img className={styles.logo} src="/logoPL.svg" />
+          <Image
+            className={styles.logo}
+            src={"/logoPL.svg"}
+            width={700}
+            height={500}
+            alt="logo"
+          />
           <span className={styles.label}>
-            Authorized Indian distributor of The Biomechanics Method CES.
+            Only India-based distributor & reseller of The BioMechanics Method
+            Corrective Exercise Specialist course.
           </span>
         </div>
 
@@ -50,7 +57,9 @@ const Footer = () => {
         <div className={styles.footerColumn}>
           <span className={styles.heading}>Get in Touch</span>
           <div className={styles.footerItems}>
-            <a className={styles.item}>info@physiolution.com</a>
+            <a href="mailto:info@physiolution.co" className={styles.item}>
+              info@physiolution.co
+            </a>
             <a className={styles.item}>India</a>
           </div>
         </div>

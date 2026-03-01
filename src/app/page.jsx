@@ -5,6 +5,7 @@ import Button from "@/components/Button";
 import { useRouter } from "next/navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 const page = () => {
     const router = useRouter();
@@ -13,8 +14,14 @@ const page = () => {
       <div className={styles.navHeroWrapper}>
         {/* NAVBAR */}
         <div className={styles.navbar}>
-          <div className={styles.logo}>
-            <img className={styles.logo} src="/logoBothDesktop.svg" />
+          <div className={styles.logoWrapper}>
+            <Image
+              className={styles.logo}
+              src={"/logoPL.svg"}
+              width={700}
+              height={500}
+              alt="logo"
+            />
           </div>
           <div className={styles.navMenu}>
             <a
@@ -50,10 +57,19 @@ const page = () => {
               Contact
             </a>
           </div>
-          <Button
-            label="Course Login"
-            external="https://www.thebiomechanicsmethod.com/my-course-log-in/"
-          />
+          <div className={styles.rightNavMenu}>
+            <Button
+              label="Course Login"
+              external="https://www.thebiomechanicsmethod.com/my-course-log-in/"
+            />
+            <Image
+              className={styles.logo}
+              src={"/logoTBMM.png"}
+              width={700}
+              height={500}
+              alt="logo"
+            />
+          </div>
         </div>
         {/* HERO SECTION */}
         <div className={styles.heroSection}>
@@ -113,7 +129,7 @@ const page = () => {
               <div className={clsx(styles.infoBadge, styles.infoBadge1)}>
                 <span className={styles.indicator}></span>
                 <span className={styles.badgeText}>
-                  Instant delivery of access code
+                  E-delivery of access code
                 </span>
               </div>
 
@@ -517,12 +533,7 @@ const page = () => {
               </span>
             </div>
 
-            <button
-              className={styles.cta}
-              onClick={() => {
-                router.push("/curriculum");
-              }}
-            >
+            <Link className={styles.cta} href="/products/tbmm-ces">
               <span className={styles.label}>Full Curriculum</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -540,7 +551,7 @@ const page = () => {
                 <path d="m12 16 4-4-4-4" />
                 <path d="M8 12h8" />
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -571,7 +582,7 @@ const page = () => {
                 <span className={styles.title}>Purchase Your Access Code</span>
                 <span className={styles.description}>
                   Complete your purchase through Physiolution to receive your
-                  unique access code instantly
+                  unique access code.
                 </span>
               </div>
             </div>
@@ -583,7 +594,10 @@ const page = () => {
                 <span className={styles.title}>Redeem on Official Portal</span>
                 <span className={styles.description}>
                   Visit{" "}
-                  <a className={styles.aTag} href="https://thebiomechanicsmethod.com">
+                  <a
+                    className={styles.aTag}
+                    href="https://thebiomechanicsmethod.inspire360.com/thebiomechanicsmethod/2e_TBMM-CES"
+                  >
                     thebiomechanicsmethod.com
                   </a>{" "}
                   and enter your code to activate your course access
@@ -612,8 +626,9 @@ const page = () => {
           <span className={styles.heading}>Get Your Access Code Today</span>
           <span className={styles.subheading}>
             Join professionals who have elevated their expertise through The
-            Biomechanics Method. Purchase your access code from India&apos;s
-            authorized distributor.
+            Biomechanics Method. Purchase your access code from the Only
+            India-based distributor & reseller of The BioMechanics Method
+            Corrective Exercise Specialist course.
           </span>
         </div>
 

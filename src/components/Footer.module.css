@@ -63,7 +63,8 @@
 
 .footerLogoCtn .logo {
     /* Logo.png */
-
+    width: 100%;
+    height: auto;
     /* Inside auto layout */
     flex: none;
     order: 0;

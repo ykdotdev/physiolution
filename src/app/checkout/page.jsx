@@ -3,6 +3,7 @@ import CheckoutClient from './CheckoutClient'
 import { supabaseServer } from '@/lib/supabaseServer';
 
 const page = async (
+  
   // {searchParams}
 ) => {
   // const params = await searchParams;
@@ -13,9 +14,9 @@ const page = async (
       .eq("id", product_id)
       .maybeSingle();
   console.log("product", product)
-      //  console.log("2: ", product, variant)
+  
   return (
-    product ? <CheckoutClient product={product} /> : <></>
+    product ? <CheckoutClient product={product}/> : <></>
   )
 }
 

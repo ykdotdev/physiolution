@@ -773,6 +773,7 @@
     padding: 0px;
     overflow: hidden;
     width: 30%;
+    height: 30%;
     aspect-ratio: 1 / 1;
     position: relative;
     /* Light Gray */
@@ -816,7 +817,7 @@
     /* Dr. Vandy’s OrthoHemp™ Pain Relief Oil */
 
     font-weight: 600;
-    font-size: var(--font-sizes-m-text);
+    font-size: var(--font-sizes-xs-text);
 
     /* Black */
     color: #07080C;
@@ -831,11 +832,9 @@
 
 .productVariantText {
     /* | Pack of 3 */
-
+    display: none;
     font-weight: 400;
-    font-size: var(--font-sizes-xs-text);
-    line-height: 2rem;
-    /* identical to box height */
+    font-size: 1.2rem;
 
     /* Gray */
     color: #6E7070;

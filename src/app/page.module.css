@@ -41,9 +41,13 @@ align-self: stretch;
 flex-grow: 0;
 }
 
-.navbar .logo{
-  width: 40rem;
+.navbar .logoWrapper{
+  align-self: stretch;
+}
 
+.navbar .logo{
+  height: var(--spacings-xl4);
+  width: auto;
 }
 
 .navMenu {
@@ -94,6 +98,17 @@ z-index: 1;
 .navItem:hover{
   /* Light Gray */
   color: var(--light-gray);
+}
+
+.rightNavMenu{
+  display: flex;
+  align-items: center;
+  gap: var(--spacings-m);
+}
+
+.rightNavMenu .logo{
+  height: var(--spacings-l);
+  width: auto;
 }
 
 /* HERO SECTION */

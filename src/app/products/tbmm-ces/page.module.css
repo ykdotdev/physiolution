@@ -50,6 +50,7 @@
 /* Promo_Video_Player */
     position: relative;
     max-width:92rem;
+    width: 90%;
     height: 100%;
     aspect-ratio: 16 / 9;
     overflow: hidden;
@@ -59,6 +60,7 @@
     /* Inside auto layout */
     flex: 1;
     order: 0;
+    align-self: stretch;
     flex-grow: 1;
 }
 
@@ -116,8 +118,8 @@
 }
 
 .summaryCtaCtn .name{
-    font-weight: 500;
-    font-size: var(--font-sizes-xs-text);
+    font-weight: 600;
+    font-size: var(--font-sizes-m-text);
 }
 
 .pricingCtn{
