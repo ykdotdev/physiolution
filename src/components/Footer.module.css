@@ -1,0 +1,236 @@
+.footer {
+    /* Footer */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: var(--spacings-xl2);
+
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 7;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.topCtn {
+    /* Top_container */
+
+    /* Auto layout */
+    /* display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; */
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: 0px;
+    gap: var(--spacings-xl2);
+
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.footerLogoCtn {
+    /* Logo_Container */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: var(--spacings-sm);
+
+    /* height: 164.1px; */
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.footerLogoCtn .logo {
+    /* Logo.png */
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.footerLogoCtn .label {
+    /* Authorized Indian distributor of The Biomechanics Method CES. */
+
+    font-weight: 400;
+    font-size: var(--font-sizes-xs-text);
+
+    /* Gray */
+    color: var(--gray);
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.footerColumn {
+    /* Footer_Column_01 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: var(--spacings-sm);
+
+    margin: 0 auto;
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    align-self: stretch;
+    order: 1;
+    flex-grow: 0;
+}
+
+.footerColumn .heading {
+    /* Quick Links */
+    user-select: none;
+    font-weight: 500;
+    font-size: var(--font-sizes-s-text);
+
+    /* Dark Gray */
+    color: #323232;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.footerItems {
+    /* Footer_Items */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: var(--spacings-xs);
+
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.footerItems .item {
+    /* Home */
+    cursor: pointer;
+    font-weight: 400;
+    font-size: var(--font-sizes-s-text);
+
+    /* Gray */
+    color: #737373;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.legalTerms {
+    /* Legal_Terms */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: var(--spacings-m);
+
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.legalTerms .copyrightText {
+    /* 2026 Physiolution.All rights reserved */
+
+    font-weight: 400;
+    font-size: var(--font-sizes-xs-text);
+
+    /* Dark Gray */
+    color: #323232;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.boringCtn {
+    /* Boring_Text */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: var(--spacings-m);
+
+    width: fit-content;
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.boringCtn .label {
+    /* Privacy Policy */
+    cursor: pointer;
+    font-weight: 400;
+    font-size: var(--font-sizes-xs-text);
+
+    /* Dark Gray */
+    color: #323232;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

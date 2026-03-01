@@ -1,0 +1,71 @@
+.CTA {
+    /* CTA_01 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacings-xs) var(--spacings-xs) var(--spacings-xs) var(--spacings-sm);
+    gap: var(--spacings-xs);
+
+    width: fit-content;
+    height: fit-content;
+    /* Black */
+    background: #101211;
+    border-radius: var(--border-radius-pill);
+}
+
+.CTA .label {
+    /* Course Login */
+
+    font-weight: 400;
+    font-size: var(--font-sizes-s-text);
+
+    /* White */
+    color: #FAFAFA;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.iconCtn {
+    /* Icon_Container */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacings-s);
+
+    /* width: fit-content;
+  height: fit-content; */
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    background: #EF6707;
+    border-radius: var(--border-radius-pill);
+
+    /* Inside auto layout */
+    flex: none;
+    /* align-self: stretch; */
+    order: 1;
+    flex-grow: 0;
+}
+
+.ctaIcon {
+    /* Vector */
+    height: var(--font-sizes-s-text);
+
+    /* White */
+    color: #FAFAFA;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}

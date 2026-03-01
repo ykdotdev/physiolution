@@ -1,0 +1,673 @@
+.mainCtn{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacings-xl2);
+}
+
+.loadIcon {
+    height: var(--font-sizes-m-text);
+    width: var(--font-sizes-m-text);
+
+    color: var(--dark-gray);
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.header{
+/* Header */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacings-m) 0;
+    gap: var(--spacings-m);
+
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 0.5fr);
+    place-items: center;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    /* align-self: stretch; */
+    flex-grow: 0;
+}
+
+.videoPlayer{
+/* Promo_Video_Player */
+    position: relative;
+    max-width:92rem;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    /* Light Gray */
+    background: #ADADAD;
+    border-radius: var(--border-radius-s);
+    /* Inside auto layout */
+    flex: 1;
+    order: 0;
+    flex-grow: 1;
+}
+
+.controlBtn{
+    background-color: rgb(0, 0, 0, 0.4);
+    border-radius: 50%;
+    padding: var(--spacings-s);
+    position: absolute;
+    top: var(--spacings-sm);
+    right: var(--spacings-sm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controlBtn .icon{
+    height: var(--font-sizes-m-text);
+    width: var(--font-sizes-m-text);
+    color: var(--white);
+}
+
+.video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.summaryCtaCtn{
+/* Summary_CTA_Container */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 var(--spacings-m);
+    gap: var(--spacings-l);
+
+    width: fit-content;
+    height: 100%;
+
+    background: #FFFFFF;
+    border-radius: var(--border-radius-s);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.summaryCtaCtn .header{
+    gap: var(--spacings-m);
+    display: flex;
+    flex-direction: column;
+}
+
+.summaryCtaCtn .name{
+    font-weight: 500;
+    font-size: var(--font-sizes-xs-text);
+}
+
+.pricingCtn{
+/* Pricing_Container */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: var(--spacings-m);
+
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.priceCtn{
+/* Price_Container */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: var(--spacings-sm);
+
+    width: fit-content;
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.priceCtn .price{
+/* ₹34250 */
+
+    font-weight: 600;
+    font-size: var(--font-sizes-m-text);
+
+    color: var(--black);
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.priceCtn .mrp{
+/* ₹34250 */
+
+    font-weight: 500;
+    font-size: var(--font-sizes-xs-text);
+    text-decoration-line: line-through;
+
+    /* Light Gray */
+    color: #ADADAD;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.discountCtn{
+/* Pillar_01 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: var(--spacings-s);
+    gap: var(--spacings-sm);
+
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--blue);
+
+    border-radius: var(--border-radius-pill);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.indicator {
+
+    position: relative;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+/* first ring */
+.indicator::before,
+.indicator::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: rgb(252, 253, 248, 0.3);
+    opacity: 0.6;
+    animation: ambient-pulse 2.2s infinite ease-out;
+}
+
+/* second ring (delayed + larger) */
+.indicator::after {
+    animation-delay: 1.1s;
+    opacity: 0.4;
+}
+
+@keyframes ambient-pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    70% {
+        transform: scale(2.4);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.discountCtn .discount {
+    /* Provides localized, targeted relief exactly where you apply it */
+
+    font-weight: 400;
+    font-size: var(--font-sizes-xs-text);
+
+    /* White */
+    color: var(--white);
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.courseSummary{
+/* Course_Summary */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: var(--spacings-m);
+
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.courseSummary .heading{
+/* Course Includes: */
+
+    font-weight: 500;
+    font-size: var(--font-sizes-xs-text);
+    letter-spacing: 0.02rem;
+
+    /* Black */
+    color: #101211;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.keypointFlex{
+/* Keypoint_Flex */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: var(--spacings-sm);
+
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.point{
+/* Point_01 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: var(--spacings-m);
+
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.point .icon{
+/* Vector */
+
+    width: var(--font-sizes-xs-text);
+    height: var(--font-sizes-xs-text);
+
+    /* Gray */
+    color: #737373;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.point .description{
+/* 56 hours On-demand Video */
+
+    font-weight: 500;
+    font-size: var(--font-sizes-xs-text);
+    letter-spacing: 0.02rem;
+
+    /* Gray */
+    color: #737373;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.buyNowCta{
+/* Buy_Course_Now_CTA */
+    position: relative;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacings-sm) var(--spacings-m);
+    gap: var(--spacings-xs);
+
+    height: fit-content;
+
+    /* Black */
+    background: #101211;
+    border-radius: var(--border-radius-xs);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.buyNowCta .label{
+/* Buy Course Now */
+
+    font-weight: 500;
+    font-size: var(--font-sizes-xs-text);
+    letter-spacing: 0.02rem;
+
+    /* White */
+    color: #FAFAFA;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+}
+
+.buyNowCta .icon{
+/* Vector */
+    position: absolute;
+    width: var(--font-sizes-m-text);
+    height: var(--font-sizes-m-text);
+
+    /* White */
+    color: #FAFAFA;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+    right: var(--spacings-sm);
+}
+
+.details{
+    width: 90%;
+}
+
+.accordionsCtn {
+    /* Accordians_Container */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacings-xl) 0;
+    gap: var(--spacings-m);
+
+    /* margin: 0 auto; */
+    /* width: 400px; */
+    width: 100%;
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 5;
+    /* align-self: stretch; */
+    flex-grow: 0;
+}
+
+.accordion {
+    /* Accordian */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: var(--spacings-xs) 0px;
+
+
+    /* width: 400px; */
+    height: fit-content;
+
+    border-bottom: 1px solid rgba(110, 112, 112, 0.4);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    transition: border-color, gap 0.25s ease;
+}
+
+.accordion.active {
+    gap: var(--spacings-m);
+    border-bottom-color: transparent;
+}
+
+.specialStyling {
+    font-weight: 600;
+}
+
+.accordion .headerCtn {
+    /* Accordian */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacings-xs);
+
+    width: 100%;
+    height: fit-content;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.accordion .titleText {
+    /* How to Use */
+    font-weight: 500;
+    font-size: var(--font-sizes-s-text);
+
+    /* Gray */
+    color: #6E7070;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    transition: color 0.25s ease;
+}
+
+.accordion.active .titleText {
+    /* How to Use */
+    /* Black */
+    color: var(--black);
+}
+
+.accordion .icon {
+    /* Vector */
+    width: var(--font-sizes-s-text);
+    /* height: var(--font-sizes-s-text); */
+
+    /* Gray */
+    color: #6E7070;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    transition: color, transform 0.25s ease;
+}
+
+.accordion.active .icon {
+    /* Vector */
+
+    /* Black */
+    color: var(--black);
+
+}
+
+.accordion.active .iconExpand {
+    transform: rotate(45deg);
+}
+
+.accordion .iconContract {
+    transform: rotate(-45deg);
+    display: none;
+    opacity: 0;
+}
+
+.accordion .contentText {
+    /* Ideal for joint pain, arthritis, muscle stiffness, nerve discomfort, sports recovery, and daily mobility support. Safe for long-term use and all age groups. */
+    opacity: 0;
+    font-weight: 400;
+    font-size: var(--font-sizes-xs-text);
+
+    /* Black */
+    color: #07080C;
+
+
+    /* Inside auto layout */
+    /* flex: none; */
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.accordion.active .contentText {
+    opacity: 100%;
+}
+
+.contentCtn {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows 0.25s ease;
+}
+
+.contentCtn .contentWrapper{
+    width: 100%;
+    display: flex;
+    gap: var(--spacings-m);
+}
+
+.contentWrapper .mImgWrapper{
+    width: 100%;
+    max-width: 40rem;
+}
+
+.contentWrapper .moduleThumbnail{
+    height: auto;
+    width: 100%;
+}
+
+.contentCtn>* {
+    overflow: hidden;
+}
+
+.accordion.active .contentCtn {
+    grid-template-rows: 1fr;
+}
+
+.details h2 {
+    font-size: var(--font-sizes-xs-text);
+    font-weight: 600;
+    color: var(--dark-gray);
+    margin-top: var(--spacings-ml);
+    margin-bottom: var(--spacings-sm);
+    padding-bottom: var(--spacings-xs);
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.details p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 1.2rem;
+    color: var(--gray);
+    text-align: justify;
+}
+
+.list {
+    margin: var(--spacings-sm) 0 var(--spacings-sm) var(--spacings-ml);
+    padding: 0;
+    list-style-type: disc;
+}
+
+.list li {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacings-sm);
+    color: var(--gray);
+    text-align: justify;
+}
+
+.list li::marker {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.cec .li, .benefits li{
+    margin-bottom: var(--spacings-xs);
+}

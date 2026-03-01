@@ -1,0 +1,1569 @@
+.landingPage{
+/* Landing Page-Desktop */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* padding: var(--spacings-sm); */
+  gap: var(--spacings-xl6);
+  padding: var(--spacings-xs);
+  /* height: fit-content; */
+
+  /* White */
+  background: #FAFAFA;
+}
+
+.navHeroWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacings-xl);
+}
+
+.navbar{
+/* Navbar */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: var(--spacings-m);
+
+height: fit-content;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.navbar .logo{
+  width: 40rem;
+
+}
+
+.navMenu {
+/* Nav_Menu */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: var(--spacings-sm) var(--spacings-ml);
+gap: var(--spacings-m);
+
+position: absolute;
+width: fit-content;
+height: fit-content;
+margin: 0 auto;
+transform: translateX(-50%);
+left: 50%;
+
+/* Black */
+background: #101211;
+border-radius: var(--border-radius-pill);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+}
+
+.navItem{
+/* FAQ */
+
+  font-weight: 400;
+  font-size: var(--font-sizes-xs-text);
+
+  /* White */
+  color: #FAFAFA;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.navItem:hover{
+  /* Light Gray */
+  color: var(--light-gray);
+}
+
+/* HERO SECTION */
+.heroSection{
+/* Hero_Section */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: var(--spacings-xl4);
+
+  width: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.heroBanner{
+/* Hero_Banner */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  z-index: 0;
+}
+
+.textCtaCtn{
+/* Text_CTA_Container */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: var(--spacings-xl4);
+  width: 100%;
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.textCtn{
+/* Text_Container */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: var(--spacings-sm);
+
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.heroTitle{
+/* Become a Certified Corrective Exercise Specialist */
+
+  font-weight: 500;
+  font-size: var(--font-sizes-l-text);
+  /* Black */
+  color: #101211;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.heroDescription{
+/* Earn the top-rated TBMM-CES credential recognized in over 80 countries. Master musculoskeletal assessment and corrective exercise programming with the premier CES certification. */
+
+  font-weight: 400;
+  font-size: var(--font-sizes-s-text);
+
+  /* Gray */
+  color: #737373;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.ctaCtn{
+/* CTA_Container */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: var(--spacings-m);
+
+  width: fit-content;
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.ctaSecondary{
+/* CTA_Secondary */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px var(--spacings-sm);
+  gap: var(--spacings-xs);
+
+  width: fit-content;
+
+  /* Dark Gray */
+  border: 1px solid #323232;
+  border-radius: var(--border-radius-pill);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.ctaSecondary .label{
+/* Learn More */
+
+  font-weight: 400;
+  font-size: var(--font-sizes-s-text);
+
+  /* Dark Gray */
+  color: #323232;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.ctaSecondary .icon{
+/* Vector */
+
+  /* width: 14px; */
+  height: var(--font-sizes-s-text);
+  /* aspect-ratio: 1 / 1; */
+
+  /* Dark Gray */
+  color: #323232;
+  transform: rotate(45deg);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.rightCtn{
+  position: relative;
+  width: 100%;
+}
+
+/* .heroImage{
+  width: 100%;
+} */
+
+.infoBadge{
+/* Info_Badge */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--spacings-s);
+  gap: var(--spacings-sm);
+
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  right: 12%;
+  bottom: 20%;
+
+  /* Dark Gray */
+  background: #323232;
+  border-radius: 
+  var(--border-radius-pill);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  z-index: 2;
+}
+
+.infoBadge2{
+  bottom: 5%;
+  right: 47%;
+}
+
+.indicator {
+
+  position: relative;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: var(--lime);
+}
+
+/* first ring */
+.indicator::before,
+.indicator::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background-color: var(--lime);
+  opacity: 0.6;
+  animation: ambient-pulse 2.2s infinite ease-out;
+}
+
+/* second ring (delayed + larger) */
+.indicator::after {
+  animation-delay: 1.1s;
+  opacity: 0.4;
+}
+
+@keyframes ambient-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+
+  70% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.badgeText{
+/* Instant delivery of access code */
+
+  font-weight: 400;
+  font-size: var(--font-sizes-xs-text);
+
+  /* White */
+  color: #FAFAFA;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.infoBadge2{
+  background-color: var(--orange);
+}
+
+.infoBadge2 .indicator{
+  background-color: var(--white);
+}
+
+.infoBadge2 .indicator::before,
+.indicator::after {
+  background-color: var(--white);
+}
+
+.purchaseNote {
+  /* * Purchase your access code from Physiolution and unlock The BioMechanics Method® Corrective Exercise Specialist course on thebiomechanicsmethod.com */
+
+  font-weight: 400;
+  font-size: var(--font-sizes-xs-text);
+  text-align: center;
+
+  /* Dark Gray */
+  color: #323232;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  z-index: 1;
+}
+
+/* FEATURE SECTION */
+
+.featureSection{
+/* Feature_Section */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: var(--spacings-xl2);
+
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.sectionHeader{
+/* Header */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 16dvw;
+  gap: var(--spacings-sm);
+
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.sectionHeader .heading{
+/* Why Choose The Biomechanics Method? */
+
+  font-weight: 600;
+  font-size: var(--font-sizes-l-text);
+  letter-spacing: 0.02rem;
+  text-align: center;
+  /* Black */
+  color: #101211;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.sectionHeader .subheading{
+/* Elevate your expertise with a comprehensive understanding of human movement and corrective exercise strategies */
+
+  font-weight: 400;
+  font-size: var(--font-sizes-m-text);
+  text-align: center;
+
+  /* Gray */
+  color: #737373;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.featureGrid{
+/* Feature_Grid */
+
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--spacings-m);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.featureCard{
+/* Feature_Card */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: var(--spacings-m);
+  gap: var(--spacings-m);
+
+  width: 100%;
+  /* height: fit-content; */
+  height: 100%;
+
+  /* Light Gray */
+  border: 1px solid #ADADAD;
+  border-radius: 8px;
+}
+
+.featureCard .icon{
+/* Vector */
+
+  width: var(--font-sizes-s-text);
+  height: var(--font-sizes-s-text);
+
+  /* Gray */
+  color:#737373;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.featureCard .textCtn{
+/* Text_Container */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: var(--spacings-sm);
+
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.featureCard .heading{
+/* Worldwide Recognition */
+
+  font-weight: 600;
+  font-size: var(--font-sizes-s-text);
+
+  /* Dark Gray */
+  color: #323232;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.featureCard .description{
+/* Join specialists in over 80 countries with the highest-rated corrective exercise credential in the fitness industry */
+
+  font-weight: 400;
+  font-size: var(--font-sizes-xs-text);
+
+  /* Gray */
+  color: #737373;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.partnershipsSection{
+/* Partnerships_Section */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: var(--spacings-xl2);
+
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.partnershipsWrapper{
+/* Partnerships_Wrapper */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: var(--spacings-l);
+  margin: 0 8dvw;
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.partnershipsGrid{
+  /* Partnerships_Grid */
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.partnershipsCard{
+/* Partnerships_Card */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: var(--spacings-m);
+  gap: var(--spacings-sm);
+
+  width: 100%;
+  height: 100%;
+
+  /* Light Gray */
+  border: 1px solid #ADADAD;
+}
+
+.partnershipsCard .header{
+/* Header */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: var(--spacings-m);
+
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.partnershipsCard .heading{
+/* ACE */
+
+  font-weight: 600;
+  font-size: var(--font-sizes-s-text);
+  text-align: center;
+
+  /* Dark Gray */
+  color: #323232;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.partnershipsCard .count{
+/* 8.0 */
+
+  font-weight: 700;
+  font-size: var(--spacings-m);
+  text-align: center;
+
+  /* Blue */
+  color: #2A5EAB;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.partnershipsCard .subheading{
+/* American Council on Exercise */
+
+  font-weight: 400;
+  font-size: var(--font-sizes-xs-text);
+
+  /* Gray */
+  color: #737373;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.partnershipsCard.active {
+  position: relative;
+  /* Green */
+  background: #48C783;
+}
+
+.partnershipsCard.active .count,
+.partnershipsCard.active .heading, .partnershipsCard.active .subheading{
+  /* White */
+  color: var(--white);
+}
+
+.badge{
+/* Badge */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem var(--spacings-xs);
+
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  right: var(--spacings-xs);
+  top: 0;
+  transform: translateY(-50%);
+
+  background: #1D5E44;
+  border-radius: var(--border-radius-pill);
+}
+
+.badge .label{
+/* INDIA */
+
+  font-weight: 400;
+  font-size: 1.2rem;
+
+  /* White */
+  color: #FAFAFA;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.aabCtn{
+/* AAB_Container */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacings-m);
+  gap: var(--spacings-ml);
+  height: fit-content;
+
+  background: rgba(72, 199, 131, 0.2);
+  border-radius: var(--border-radius-xs);
+
+  /* Inside auto layout */
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.aabCtn .heading{
+/* Also Approved By: */
+
+  font-weight: 600;
+  font-size: var(--font-sizes-s-text);
+  text-align: center;
+  letter-spacing: 0.02rem;
+
+  /* Black */
+  color: #101211;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.aabGrid{
+/* AAB_Grid */
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--spacings-sm);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.aabItem{
+/* AAB_Item */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacings-s);
+  gap: 0;
+  width: 100%;
+  white-space: nowrap;
+  height: fit-content;
+
+  /* Gray */
+  background: #737373;
+  border-radius: var(--border-radius-pill);
+}
+
+.aabItem .label{
+/* NETA • 80 CECs */
+  
+  font-weight: 400;
+  font-size: var(--font-sizes-xs-text);
+
+  /* White */
+  color: #FAFAFA;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* Inside auto layout */
+  /* flex: none; */
+  order: 0;
+  flex-grow: 0;
+}
+
+.note{
+/* Note */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: var(--spacings-xs);
+
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.note .icon{
+/* Vector */
+
+  aspect-ratio: 1 / 1;
+
+  /* Gray */
+  color: #737373;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.note .text{
+/*  Eligible for credits from NESTA, NFPT, WITS, YMCA, and many other certifying organizations upon petition */
+
+  font-weight: 400;
+  font-size: var(--font-sizes-xs-text);
+  text-align: center;
+
+  /* Gray */
+  color: #737373;
+
+
+  /* Inside auto layout */
+  order: 1;
+  flex-grow: 0;
+}
+
+/* CURRICULUM SECTION */
+.curriculumSection{
+/* Curriculum_Section */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: var(--spacings-xl2);
+
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 4;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.curriculumGrid{
+/* Curriculum_Grid */
+
+  /* padding: 0px 40px; */
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: var(--spacings-sm);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.moduleCard{
+/* Module_Card */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: var(--spacings-sm);
+  gap: var(--spacings-m);
+
+  width: 100%;
+  /* height: fit-content; */
+
+  /* Inside auto layout */
+  flex: none;
+  align-self: stretch;
+  order: 0;
+  flex-grow: 0;
+}
+
+.moduleCard .number, .moduleCardLarge .number{
+/* 1. */
+
+  font-weight: 700;
+  font-size: var(--font-sizes-m-text);
+  letter-spacing: 0.02rem;
+
+  /* Blue */
+  color: #2A5EAB;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.moduleContentCtn{
+/* Module_Content_Container */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: var(--spacings-sm);
+
+  height: 100%;
+
+
+  /* Inside auto layout */
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+
+  
+}
+
+.moduleContentCtn .heading{
+/* Fundamentals of Structural Assessment */
+
+  font-weight: 700;
+  font-size: var(--font-sizes-m-text);
+  letter-spacing: 0.02rem;
+
+  /* Dark Gray */
+  color: #323232;
+
+
+  /* Inside auto layout */
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.moduleContentCtn .description{
+/* Learn step-by-step musculoskeletal assessment techniques for identifying imbalances */
+
+  font-weight: 400;
+  font-size: var(--font-sizes-s-text);
+  letter-spacing: -0.02rem;
+
+  /* Dark Gray */
+  color: #323232;
+
+
+  /* Inside auto layout */
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.moduleCardLarge{
+  /* Module_Card_Large */
+    grid-row: 1 / 3;
+    grid-column: 3;
+  
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacings-ml) var(--spacings-m);
+    gap: var(--spacings-l);
+  
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+  
+    background: rgba(42, 94, 171, 0.1);
+    border-radius: 1.6rem;
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.moduleCardLarge .moduleContentCtn{
+  all: unset;
+/* Content_Container */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: var(--spacings-m);
+
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.moduleCardLarge .header{
+/* Header */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: var(--spacings-sm);
+
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.moduleCardLarge .heading {
+/* Corrective Exercise Program Design */
+
+  font-weight: 600;
+  font-size: var(--font-sizes-m-text);
+  text-align: center;
+  letter-spacing: 0.02rem;
+
+  /* Black */
+  color: #101211;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.moduleCardLarge .subheading {
+/* Learn client communication, program development, and real-world application strategies */
+
+  font-weight: 400;
+  font-size: var(--font-sizes-s-text);
+  text-align: center;
+  letter-spacing: -0.02rem;
+
+  /* Black */
+  color: #101211;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.moduleCardLarge .cta{
+/* CTA */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacings-sm);
+  gap: var(--spacings-sm);
+
+  width: fit-content;
+  height: fit-content;
+
+  /* Blue */
+  background: #2A5EAB;
+  border-radius: var(--border-radius-pill);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.moduleCardLarge .cta .label{
+/* Full Curriculum */
+
+  font-weight: 500;
+  font-size: var(--font-sizes-s-text);
+
+  /* White */
+  color: #FAFAFA;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.moduleCardLarge .cta .icon{
+/* Vector */
+
+  /* width: 20px; */
+  height: 100%;
+  aspect-ratio: 1 / 1;
+
+  /* White */
+  color: #FAFAFA;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* STEPS SECTION */
+
+.stepSection{
+/* Step_Section */
+
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  
+  column-gap: var(--spacings-l);
+
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 5;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.imageCtn{
+/* Image_Container */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 0;
+
+  height: 100%;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.courseImage{
+/* CourseImage.png */
+  width: 100%;
+  /* aspect-ratio:  1 / 1; */
+  border-radius: var(--border-radius-s);
+  /* Inside auto layout */
+  flex: none;
+  align-self: center;
+  order: 0;
+  /* flex-grow: 1; */
+}
+
+.stepContentCtn{
+/* Steps_Content_Container */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: var(--spacings-xl2);
+
+  height: 100%;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.stepContentCtn .sectionHeader{
+  padding: 0;
+}
+
+.stepContentCtn .heading{
+  text-align: left;
+}
+
+.stepContentCtn .subheading{
+  text-align: left;
+}
+
+.stepCtn{
+/* Steps_Container */
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: var(--spacings-xl4);
+
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  align-self: stretch;
+  order: 1;
+  flex-grow: 0;
+}
+
+.line {
+  position: absolute;
+  top: 10%;
+  /* start of row 1 */
+  bottom: 10%;
+  /* end of row 3 */
+  left: 4rem;
+  /* align with circles */
+  width: 2px;
+  border: 2px dashed rgba(72, 199, 131, 0.5);
+  transform: translateX(-50%);
+  z-index: 1;
+  
+} 
+
+.aTag{
+  color: var(--dark-gray);
+}
+
+.step{
+/* Step_01 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: var(--spacings-ml);
+
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  align-self: stretch;
+  order: 0;
+  flex-grow: 0;
+}
+
+.stepNumber{
+/* Step_Number */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacings-sm);
+
+  height: 8rem;
+  width: 8rem;
+  aspect-ratio: 1 / 1;
+  /* Green */
+  background: #48C783;
+  border-radius: var(--border-radius-pill);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  /* align-self: stretch; */
+  flex-grow: 0;
+  z-index: 2;
+}
+
+.stepNumber .label{
+/* 1 */
+
+  font-weight: 600;
+  font-size: var(--font-sizes-l-text);
+
+  /* White */
+  color: #FAFAFA;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.stepDetails{
+/* Step_Details */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: var(--spacings-sm);
+
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  align-self: stretch;
+  order: 1;
+  flex-grow: 0;
+}
+
+.step .title{
+/* Purchase Your Access Code */
+
+  font-weight: 600;
+  font-size: var(--font-sizes-m-text);
+
+  color: var(--black);
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.step .description{
+/* Complete your purchase through Physiolution to receive your unique access code instantly */
+
+  font-weight: 400;
+  font-size: var(--font-sizes-s-text);
+
+  /* Gray */
+  color: #737373;
+
+
+  /* Inside auto layout */
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+/* CTA SECTION */
+.ctaSection{
+/* CTA_Section */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 12dvw;
+  gap: var(--spacings-l);
+
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 6;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.ctaSection .textCtn{
+/* Text_Container */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: var(--spacings-m);
+
+  height: fit-content;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.ctaSection .heading{
+/* Get Your Access Code Today */
+
+  font-weight: 600;
+  font-size: var(--font-sizes-l-text);
+  text-align: center;
+
+  /* Black */
+  color: #101211;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.ctaSection .subheading{
+/* Join professionals who have elevated their expertise through The Biomechanics Method. Purchase your access code from India's authorized distributor. */
+
+  font-weight: 400;
+  font-size: var(--font-sizes-m-text);
+  text-align: center;
+
+  /* Black */
+  color: #101211;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+@media (max-width: 1400px) {
+  .heroBanner{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr minmax(0, 1fr );
+  }
+
+  .textCtaCtn{
+    align-items: center;
+  }
+
+  .heroTitle{
+    text-align: center;
+  }
+
+  .heroDescription{
+    text-align: center;
+  }
+
+  .rightCtn{
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+
+  .heroImage{
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
