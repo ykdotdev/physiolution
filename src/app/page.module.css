@@ -107,7 +107,7 @@ z-index: 1;
 }
 
 .rightNavMenu .logo{
-  height: var(--spacings-l);
+  height: var(--spacings-xl);
   width: auto;
 }
 

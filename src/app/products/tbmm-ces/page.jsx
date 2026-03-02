@@ -114,7 +114,7 @@ const page = () => {
               </div>
               <div className={styles.discountCtn}>
                 <div className={styles.indicator}></div>
-                <div className={styles.discount}>69% off</div>
+                <div className={styles.discount}>29% off</div>
               </div>
             </div>
             <div className={styles.courseSummary}>

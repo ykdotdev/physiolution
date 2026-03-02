@@ -34,11 +34,11 @@ const page = () => {
             </a>
             <a
               className={clsx(styles.navItem)}
-              onClick={() => {
-                router.push("/faq");
-              }}
+              // onClick={() => {
+              //   router.push("/faq");
+              // }}
             >
-              FAQs
+              Videos
             </a>
             <a
               className={clsx(styles.navItem)}
