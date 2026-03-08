@@ -1,6 +1,6 @@
-import styles from './loading.module.css';
+import styles from "./loading.module.css";
 
-export default function Loading() {
+const Loading = () => {
   return (
     <div className={styles.loadWrapper}>
       <svg
@@ -17,4 +17,6 @@ export default function Loading() {
       </svg>
     </div>
   );
-}
+};
+
+export default Loading

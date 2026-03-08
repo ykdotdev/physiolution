@@ -1,0 +1,144 @@
+.navbar {
+    /* Navbar */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: var(--spacings-m);
+
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.navbar .logoWrapper {
+    align-self: stretch;
+}
+
+.navbar .logo {
+    height: var(--spacings-xl);
+    width: auto;
+}
+
+.navMenu {
+    /* Nav_Menu */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: var(--spacings-sm) var(--spacings-ml);
+    gap: var(--spacings-m);
+
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    left: 50%;
+
+    /* Black */
+    background: #101211;
+    border-radius: var(--border-radius-pill);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+
+}
+
+.navItem {
+    /* FAQ */
+
+    font-weight: 400;
+    font-size: var(--font-sizes-xs-text);
+
+    /* White */
+    color: #FAFAFA;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.navItem:hover {
+    /* Light Gray */
+    color: var(--light-gray);
+}
+
+.rightNavMenu {
+    display: flex;
+    align-items: center;
+    gap: var(--spacings-m);
+}
+
+.rightNavMenu .logo {
+    height: var(--spacings-xl);
+    width: auto;
+}
+
+/* Mobile Navigation Menu */
+.mobileNavMenu {
+    display: flex;
+    border-radius: var(--border-radius-pill);
+    gap: var(--spacings-sm);
+    transition: all 0.3s ease;
+}
+
+.mobileNavMenu .icon {
+    user-select: none;
+    height: var(--font-sizes-m-text);
+    width: var(--font-sizes-m-text);
+    color: var(--black);
+}
+
+/* menu items */
+.mobileNavMenu .navItems {
+    display: none;
+    opacity: 0;
+    flex-direction: column;
+    gap: var(--spacings-sm);
+    transition: opacity 0.25s ease;
+}
+
+.mobileNavMenu .navItems .navItem{
+    color: black;
+}
+
+.mobileNavMenu .ctaContainer {
+    display: none;
+}
+
+.mobileNavMenu.open .navItems {
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+}
+
+.navArrow {
+    transition: transform 0.25s ease;
+}
+
+.navArrow.open {
+    transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 470px) {
+    .logoWrapper .logo {
+        height: var(--spacings-xl);
+    }
+}

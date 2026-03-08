@@ -34,10 +34,10 @@
     align-items: center;
     padding: var(--spacings-m) 0;
     gap: var(--spacings-m);
-
+    width: 100%;
     height: fit-content;
     display: grid;
-    grid-template-columns: 1fr minmax(0, 0.5fr);
+    grid-template-columns: 1fr minmax(0, 0.6fr);
     place-items: center;
     /* Inside auto layout */
     flex: none;
@@ -51,16 +51,19 @@
     position: relative;
     max-width:92rem;
     width: 90%;
-    height: 100%;
+    /* height: 100%; */
     aspect-ratio: 16 / 9;
     overflow: hidden;
     /* Light Gray */
     background: #ADADAD;
     border-radius: var(--border-radius-s);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* Inside auto layout */
     flex: 1;
     order: 0;
-    align-self: stretch;
+    /* align-self: stretch; */
     flex-grow: 1;
 }
 
@@ -83,7 +86,7 @@
 }
 
 .video{
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     object-fit: cover;
 }
@@ -100,6 +103,7 @@
     gap: var(--spacings-l);
 
     width: fit-content;
+    max-width: 64rem;
     height: 100%;
 
     background: #FFFFFF;
@@ -472,6 +476,7 @@
     order: 5;
     /* align-self: stretch; */
     flex-grow: 0;
+    
 }
 
 .accordion {
@@ -521,7 +526,7 @@
     height: fit-content;
 
     /* Inside auto layout */
-    flex: none;
+    /* flex: none; */
     order: 0;
     flex-grow: 0;
 }
@@ -536,7 +541,6 @@
 
 
     /* Inside auto layout */
-    flex: none;
     order: 0;
     flex-grow: 0;
     transition: color 0.25s ease;
@@ -616,13 +620,14 @@
 }
 
 .contentWrapper .mImgWrapper{
-    width: 100%;
+    width: fit-content;
     max-width: 40rem;
 }
 
 .contentWrapper .moduleThumbnail{
     height: auto;
-    width: 100%;
+    width: 20dvw;
+    min-width: 20rem;
 }
 
 .contentCtn>* {
@@ -644,8 +649,7 @@
 }
 
 .details p {
-    font-size: 1.4rem;
-    line-height: 1.4;
+    font-size: var(--font-sizes-s-text);
     margin-bottom: 1.2rem;
     color: var(--gray);
     text-align: justify;
@@ -658,7 +662,7 @@
 }
 
 .list li {
-    font-size: 1.4rem;
+    font-size: var(--font-sizes-s-text);
     line-height: 1.8;
     margin-bottom: var(--spacings-sm);
     color: var(--gray);
@@ -672,4 +676,29 @@
 
 .cec .li, .benefits li{
     margin-bottom: var(--spacings-xs);
+}
+
+@media (max-width: 1000px) {
+   .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .videoPlayer{
+    align-self: auto;
+   }
+
+   .summaryCtaCtn{
+    max-width: 52rem;
+    width: 90%;
+   }
+}
+
+@media (max-width: 470px) {
+    .contentWrapper{
+        flex-direction: column;
+        align-items: center;
+    }
 }

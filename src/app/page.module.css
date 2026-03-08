@@ -20,97 +20,6 @@
   gap: var(--spacings-xl);
 }
 
-.navbar{
-/* Navbar */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 0px;
-gap: var(--spacings-m);
-
-height: fit-content;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-}
-
-.navbar .logoWrapper{
-  align-self: stretch;
-}
-
-.navbar .logo{
-  height: var(--spacings-xl4);
-  width: auto;
-}
-
-.navMenu {
-/* Nav_Menu */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: var(--spacings-sm) var(--spacings-ml);
-gap: var(--spacings-m);
-
-position: absolute;
-width: fit-content;
-height: fit-content;
-margin: 0 auto;
-transform: translateX(-50%);
-left: 50%;
-
-/* Black */
-background: #101211;
-border-radius: var(--border-radius-pill);
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-z-index: 1;
-
-}
-
-.navItem{
-/* FAQ */
-
-  font-weight: 400;
-  font-size: var(--font-sizes-xs-text);
-
-  /* White */
-  color: #FAFAFA;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.navItem:hover{
-  /* Light Gray */
-  color: var(--light-gray);
-}
-
-.rightNavMenu{
-  display: flex;
-  align-items: center;
-  gap: var(--spacings-m);
-}
-
-.rightNavMenu .logo{
-  height: var(--spacings-xl);
-  width: auto;
-}
-
 /* HERO SECTION */
 .heroSection{
 /* Hero_Section */
@@ -307,13 +216,18 @@ z-index: 1;
 }
 
 .rightCtn{
-  position: relative;
   width: 100%;
 }
 
-/* .heroImage{
+.imageBadgeWrapper{
+  width: fit-content;
+  position: relative;
   width: 100%;
-} */
+  container-type: inline-size;
+  container-name: imageBadgeWrapper;
+}
+
+
 
 .infoBadge{
 /* Info_Badge */
@@ -344,8 +258,8 @@ z-index: 1;
 }
 
 .infoBadge2{
-  bottom: 5%;
-  right: 47%;
+  bottom: 8%;
+  right: 40%;
 }
 
 .indicator {
@@ -1552,6 +1466,19 @@ z-index: 1;
   flex-grow: 0;
 }
 
+
+@container imageBadgeWrapper (max-width: 440px) {
+  .infoBadge {
+    bottom: 20% ;
+    right: 0rem;
+  }
+
+  .infoBadge2 {
+    bottom: 1rem;
+    right: 30%;
+  }
+}
+
 @media (max-width: 1400px) {
   .heroBanner{
     grid-template-columns: 1fr;
@@ -1576,9 +1503,132 @@ z-index: 1;
     display: flex;
   }
 
-  .heroImage{
-    height: 100%;
+  .imageBadgeWrapper{
     margin: 0 auto;
+  }
+  .heroImage{
+    width: 100%;
+    max-height: 50dvh;
   }
 }
 
+@media (max-width: 1000px) {
+  .curriculumGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: var(--spacings-sm);
+      column-gap: 0;
+  }
+
+  .moduleCardLarge{
+    grid-row: 3;
+    grid-column: 1 / 3;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionHeader{
+    padding: 0;
+  }
+
+  .heroBanner .textCtn{
+    align-self: center;
+    max-width: 90dvw;
+  }
+
+  .featureGrid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+
+  .partnershipsGrid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
+
+  .stepSection{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .stepContentCtn{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stepSection .heading, .stepSection .subheading{
+    text-align: center;
+  }
+
+  .stepSection .imageCtn{
+    margin: 0 auto;
+    max-width: 64dvw;
+  }
+
+  .stepCtn{
+    margin: 0 var(--spacings-l);
+  }
+
+  .step{
+    align-items: flex-start;
+  }
+
+  .line{
+    left: 2rem;
+  }
+
+  .stepNumber{
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .stepNumber .label{
+    font-size: var(--font-sizes-m-text);
+  }
+}
+
+@media (max-width: 470px) {
+  .heroBanner{
+    gap: var(--spacings-l);
+  }
+
+  .heroBanner .textCtn {
+    align-self: center;
+    max-width: 100%;
+  }
+
+  .featureGrid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+  }
+
+  .curriculumGrid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    row-gap: var(--spacings-m);
+    column-gap: 0;
+  }
+
+  .moduleCardLarge {
+    grid-row: 5;
+    grid-column: 1;
+
+  }
+
+  .stepSection .imageCtn {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .aabGrid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stepCtn {
+    margin: 0;
+  }
+
+  .ctaSection{
+    padding: 0;
+  }
+}

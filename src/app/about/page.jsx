@@ -115,11 +115,7 @@ const page = () => {
             instructors, yoga teachers, physical therapists, massage therapists,
             doctors, physiotherapists, chiropractors, professional sports teams,
             coaches and college and university professors in over 80 countries
-            use The BioMechanics Method. By purchasing this course, you are
-            agreeing to The BioMechanics Method Educational Programs{" "}
-            <a href="https://www.thebiomechanicsmethod.com/terms-and-conditions/">
-              Terms &amp; Conditions.
-            </a>
+            use The BioMechanics Method.
           </p>
           <h2>Additional Information</h2>
           <p>
@@ -138,7 +134,11 @@ const page = () => {
             courseware is non-refundable. By purchasing The BioMechanics Method
             courseware through PHYSIOLUTION (Brand under Dr. Vandy’s Lab), users
             agree to receiving email communications from The BioMechanics Method
-            regarding their courseware purchase.
+            regarding their courseware purchase. By purchasing this course, you
+            are agreeing to The BioMechanics Method Educational Programs{" "}
+            <a href="https://www.thebiomechanicsmethod.com/terms-and-conditions/">
+              Terms &amp; Conditions.
+            </a>
           </p>
         </div>
       </div>

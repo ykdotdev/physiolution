@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import CheckoutClient from './CheckoutClient'
 import { supabaseServer } from '@/lib/supabaseServer';
+import Loading from '../loading';
 
 const page = async (
   
@@ -13,11 +14,17 @@ const page = async (
       .select("*")
       .eq("id", product_id)
       .maybeSingle();
-  console.log("product", product)
+  // console.log("product", product)
   
   return (
-    product ? <CheckoutClient product={product}/> : <></>
-  )
+    <>
+      {product ? (
+          <CheckoutClient product={product} />
+      ) : (
+        <Loading />
+      )}
+    </>
+  );
 }
 
 export default page

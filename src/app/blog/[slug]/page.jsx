@@ -67,7 +67,7 @@ export default async function BlogPostPage({ params }) {
       </div>
 
       {/* Featured Image */}
-      <div className={styles.featuredImage}>
+      {/* <div className={styles.featuredImage}>
         <Image
           src={post.image || "/placeholder.svg"}
           alt={post.title}
@@ -75,7 +75,7 @@ export default async function BlogPostPage({ params }) {
           className={styles.coverImage}
           priority
         />
-      </div>
+      </div> */}
 
       {/* Content */}
       <div className={styles.contentWrapper}>
@@ -116,6 +116,7 @@ export default async function BlogPostPage({ params }) {
               strong: ({ node, ...props }) => <strong {...props} />,
               cimg: ({ node, ...props }) => <CImg {...props} />,
               courselink: () => <CourseLink />,
+              a: ({ href, children }) => <Link href={href}>{children}</Link>,
             }}
           >
             {post.content}

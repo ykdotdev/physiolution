@@ -47,7 +47,7 @@ To learn more from Justin Price about how the body is affected by physical, ment
 
 **Contributed By:**
 
-Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
+Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
   },
   {
     id: "ankle-pain",
@@ -256,7 +256,7 @@ To learn more from Justin Price about corrective exercise, and take your busines
 
 **Contributed By:**
 
-Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
+Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
   },
   {
     id: "better-posture",
@@ -292,7 +292,7 @@ For example, let’s consider a client that has excessive thoracic kyphosis (i.e
 
 Now that you understand how posture affects a person’s mood, feelings and emotions, you can teach your clients about this relationship, help them become more aware of their unhelpful postural habits, correct any deviations and ultimately increase their happiness, health and vitality.
 
-To learn more from Justin Price about how to assess and correct your client’s posture to not only improve their mood, but get them out of pain, check out the industry’s highest-rated corrective exercise specialist certification - **The BioMechanics Method Corrective Exercise Specialist course available through Physiolution.**
+To learn more from Justin Price about how to assess and correct your client’s posture to not only improve their mood, but get them out of pain, check out the industry’s highest-rated corrective exercise specialist certification - **<a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist course available through Physiolution</a>.**
 
 <CourseLink></CourseLink>
 
@@ -308,7 +308,7 @@ To learn more from Justin Price about how to assess and correct your client’s 
 
 **Contributed By:**
 
-Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
+Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
   },
   {
     id: "ankle-pain-info",
@@ -400,13 +400,13 @@ Therefore, appropriate footwear recommendations to increase dorsiflexion include
 
 Ankle pain is a common problem that affects almost all of us at one time or another. Understanding that the underlying causes of ankle pain can result from dysfunction almost anywhere in the kinetic chain (and knowing how to address these problems) will not only help you and your clients alleviate their symptoms of ankle pain, but improve the function of their entire body.
 
-To learn more from Justin Price about the causes and cures for both your own and your clients’ aches and pains, check out **The BioMechanics Method Corrective Exercise Specialist course available through Physiolution.**
+To learn more from Justin Price about the causes and cures for both your own and your clients’ aches and pains, check out **<a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist course available through Physiolution</a>.**
 
 <CourseLink></CourseLink>
 
 **Contributed By:**
 
-Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.
+Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.
 
 **References:**
 
@@ -538,7 +538,7 @@ Learn The BioMechanics Method’s proven system for uncovering the root cause of
 
 **Contributed By:**
 
-Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of **The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution**. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
+Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of **<a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>**. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
   },
   {
     id: "neck-shoulder-pain",
@@ -638,13 +638,13 @@ Neck and shoulder pain can not only affect one’s ability to exercise, but seve
 
 **What are you missing in your client assessments?**
 
-If you're only treating where it hurts, you're missing the "why." Learn how to look at the whole body to uncover the true source of aches and pains. Justin Price breaks it all down in The BioMechanics Method Corrective Exercise Specialist course – the industry’s highest-rated certification.
+If you're only treating where it hurts, you're missing the "why." Learn how to look at the whole body to uncover the true source of aches and pains. Justin Price breaks it all down in <a href="/products/tbmm-ces">The BioMechanics Method Corrective Exercise Specialist course</a> – the industry’s highest-rated certification.
 
 <CourseLink></CourseLink>
 
 **Contributed By:**
 
-Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of **The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution**. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.
+Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of **<a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>**. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.
 
 ### References:
 
@@ -719,7 +719,7 @@ High-value clients seek out experts who can solve complex physical issues. Gain 
 
 ## Contributed By:
 
-Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of **The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution.** The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.
+Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of **<a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>.** The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.
 
 ## References
 
@@ -799,10 +799,6 @@ Note: If the pressure of the foam roller is too much you can regress this exerci
 
 Many of the largest and most powerful muscles of the body cross the hips and attach to the leg.<sup>2,3</sup> Restrictions in these muscles affect the ability of the hips to function correctly and, subsequently, the amount of stress experienced by the knees. The simple hip assessment and effective corrective exercise strategies outlined in this blog can help both you and your clients experience substantially less knee pain as well as improved performance in both the short and long-term.
 
-ADD PROMO TEXT AND LINK TO COURSE LISTED ON YOUR SITE HERE
-
-Suggested promo text:
-
 To learn more about how to discover the underlying causes of you and your client’s aches and pains check out **The BioMechanics Method Corrective Exercise Specialist program available through Physiolution.**
 
 <CourseLink></CourseLink>
@@ -825,7 +821,7 @@ To learn more about how to discover the underlying causes of you and your client
 
 **Contributed By:**
 
-Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
+Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
   },
   {
     id: "ai-replacement",
@@ -876,7 +872,7 @@ If you are a fitness, exercise, or health professional interested in learning ho
 
 **Contributed By:**
 
-Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
+Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
   },
   {
     id: "old-scar-tissue",
@@ -942,7 +938,7 @@ The formation of scar tissue can sometimes affect the activation of a muscle or 
 
 Recognizing the far-reaching effects of scar tissue, identifying those areas of the body that are affected by it and applying appropriate strategies to treat scars can help you limit their potential to cause pain, dysfunction and inhibit performance.
 
-To learn more from Justin Price about the causes and cures for both your own and your clients’ aches and pains, check out the industry’s highest-rated corrective exercise specialist certification - **The BioMechanics Method Corrective Exercise Specialist course available through Physiolution.**
+To learn more from Justin Price about the causes and cures for both your own and your clients’ aches and pains, check out the industry’s highest-rated corrective exercise specialist certification - **<a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist course available through Physiolution</a>.**
 
 <CourseLink></CourseLink>
 
@@ -972,7 +968,7 @@ To learn more from Justin Price about the causes and cures for both your own and
 
 **Contributed By:**
 
-Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, PTA Global, PTontheNET, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
+Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, PTA Global, PTontheNET, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
   },
   {
     id: "static-postural-assessments",
@@ -1073,13 +1069,13 @@ As you begin incorporating corrective exercise procedures more regularly into cl
 
 Personal trainers qualified as corrective exercise specialists know how musculoskeletal malalignments and imbalances of any kind can create pain, injury, and dysfunction throughout the body. They also know how to use the results of individual consultations and assessments to pinpoint clients’ exercise needs so they can start or return to a regular fitness program successfully. In short, knowledgeable and qualified corrective exercise specialists have the skills to competently meet clients’ musculoskeletal restoration needs, and represent perfectly the fitness professional of the future.
 
-To learn more from Justin Price about the causes and cures for both your own and your clients’ aches and pains, check out **The BioMechanics Method Corrective Exercise Specialist course available through Physiolution.**
+To learn more from Justin Price about the causes and cures for both your own and your clients’ aches and pains, check out **<a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist course available through Physiolution</a>.**
 
 <CourseLink></CourseLink>
 
 **Contributed By:**
 
-Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.
+Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.
 
 ### References:
 
@@ -1164,7 +1160,7 @@ Step back with the right leg while raising the right arm over your head. Make su
 
 Incorporating corrective exercise techniques to loosen up the hip flexor muscles (such as those detailed above) into both your daily life and workout program will keep them flexible and your lower back, knees, ankles and feet stress and pain free for years to come.
 
-To learn more from Justin Price about the causes and cures for both your own and your clients’ aches and pains, check out **The BioMechanics Method Corrective Exercise Specialist course available through Physiolution.**
+To learn more from Justin Price about the causes and cures for both your own and your clients’ aches and pains, check out **<a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist course available through Physiolution</a>.**
 
 <CourseLink></CourseLink>
 
@@ -1178,7 +1174,7 @@ To learn more from Justin Price about the causes and cures for both your own and
 
 **Contributed By:**
 
-Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 90 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
+Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 90 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
   },
   {
     id: "lower-back-pain",
@@ -1276,7 +1272,7 @@ Stand about 18 inches away from a wall on your left-hand side. Place the left fo
 
 Lower back pain can be debilitating, depressing and very uncomfortable. Use your knowledge of how the entire body needs to work as an integrated system to help you design corrective exercises that reduce stress to the lower back, and the likelihood that this area of the body will get injured, or become problematic, in the future.
 
-To learn more from Justin Price about how to design corrective exercises that strengthen the body and safeguard it from pain and injury, check out **The BioMechanics Method Corrective Exercise Specialist course available through Physiolution.**
+To learn more from Justin Price about how to design corrective exercises that strengthen the body and safeguard it from pain and injury, check out **<a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist course available through Physiolution</a>.**
 
 <CourseLink></CourseLink>
 

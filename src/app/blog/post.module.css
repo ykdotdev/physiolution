@@ -97,6 +97,11 @@
   color: var(--dark-gray);
 }
 
+.article a{
+  color: var(--blue);
+  text-decoration: underline;
+}
+
 .articleHeading {
   color: var(--black);
   font-size: var(--font-sizes-s-text);

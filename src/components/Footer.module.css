@@ -235,3 +235,18 @@
     order: 0;
     flex-grow: 0;
 }
+
+@media (max-width: 470px) {
+    .topCtn{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: var(--spacings-m);
+    }
+
+    .getInTouchColumn{
+        display: none;
+    }
+
+    .copyrightText{
+        margin: 0 auto;
+    }
+}

@@ -2,75 +2,27 @@
 import clsx from "clsx";
 import styles from "./page.module.css";
 import Button from "@/components/Button";
-import { useRouter } from "next/navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import React, { useState, useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
+import { sizeMobile, sizeTablet } from "@/config/constants";
 
 const page = () => {
-    const router = useRouter();
+  const isMobile = useMediaQuery({ query: `(max-width: ${sizeMobile})` });
+  const isTablet = useMediaQuery({ query: `(max-width: ${sizeTablet})` });
+
+  const [mounted, setMounted] = useState(false);
+    useEffect(() => {
+      setMounted(true);
+    }, []);
+    
   return (
     <div className={styles.landingPage}>
       <div className={styles.navHeroWrapper}>
-        {/* NAVBAR */}
-        <div className={styles.navbar}>
-          <div className={styles.logoWrapper}>
-            <Image
-              className={styles.logo}
-              src={"/logoPL.svg"}
-              width={700}
-              height={500}
-              alt="logo"
-            />
-          </div>
-          <div className={styles.navMenu}>
-            <a
-              className={clsx(styles.navItem)}
-              onClick={() => {
-                router.push("/about");
-              }}
-            >
-              About Us
-            </a>
-            <a
-              className={clsx(styles.navItem)}
-              // onClick={() => {
-              //   router.push("/faq");
-              // }}
-            >
-              Videos
-            </a>
-            <a
-              className={clsx(styles.navItem)}
-              onClick={() => {
-                router.push("/blog");
-              }}
-            >
-              Blog
-            </a>
-            <a
-              className={clsx(styles.navItem)}
-              onClick={() => {
-                router.push("/contact");
-              }}
-            >
-              Contact
-            </a>
-          </div>
-          <div className={styles.rightNavMenu}>
-            <Button
-              label="Course Login"
-              external="https://www.thebiomechanicsmethod.com/my-course-log-in/"
-            />
-            <Image
-              className={styles.logo}
-              src={"/logoTBMM.png"}
-              width={700}
-              height={500}
-              alt="logo"
-            />
-          </div>
-        </div>
+        <Navbar />
         {/* HERO SECTION */}
         <div className={styles.heroSection}>
           <div className={styles.heroBanner}>
@@ -81,9 +33,11 @@ const page = () => {
                 </div>
 
                 <div className={styles.heroDescription}>
-                  Earn the top-rated TBMM-CES credential recognized in over 80
+                  {mounted && isMobile
+                    ? `Earn the top-rated TBMM-CES credential recognized in 80+ countries. Master musculoskeletal assessment and corrective exercise programming.`
+                    : `Earn the top-rated TBMM-CES credential recognized in over 80
                   countries. Master musculoskeletal assessment and corrective
-                  exercise programming with the premier CES certification.
+                  exercise programming with the premier CES certification.`}
                 </div>
               </div>
 
@@ -121,21 +75,23 @@ const page = () => {
             </div>
 
             <div className={styles.rightCtn}>
-              <img
-                className={styles.heroImage}
-                src="/hero_banner.svg"
-                alt="Hero"
-              />
-              <div className={clsx(styles.infoBadge, styles.infoBadge1)}>
-                <span className={styles.indicator}></span>
-                <span className={styles.badgeText}>
-                  E-delivery of access code
-                </span>
-              </div>
+              <div className={styles.imageBadgeWrapper}>
+                <img
+                  className={styles.heroImage}
+                  src="/hero_banner.svg"
+                  alt="Hero"
+                />
+                <div className={clsx(styles.infoBadge, styles.infoBadge1)}>
+                  <span className={styles.indicator}></span>
+                  <span className={styles.badgeText}>
+                    E-delivery of access code
+                  </span>
+                </div>
 
-              <div className={clsx(styles.infoBadge, styles.infoBadge2)}>
-                <span className={styles.indicator}></span>
-                <div className={styles.badgeText}>7 CPDs from REPS India</div>
+                <div className={clsx(styles.infoBadge, styles.infoBadge2)}>
+                  <span className={styles.indicator}></span>
+                  <div className={styles.badgeText}>7 CPDs from REPS India</div>
+                </div>
               </div>
             </div>
           </div>
@@ -327,8 +283,8 @@ const page = () => {
         <div className={styles.sectionHeader}>
           <span className={styles.heading}>Approved for CECs Worldwide</span>
           <span className={styles.subheading}>
-            The TBMM-CES course is approved for continuing education credits by
-            20+ major certifying organizations globally
+            {mounted && isMobile ? `TBMM-CES course is approved for continuing education credits by 15+ organizations globally.` : `The TBMM-CES course is approved for continuing education credits by
+            15+ major certifying organizations globally`}            
           </span>
         </div>
 
@@ -558,9 +514,11 @@ const page = () => {
 
       {/* STEPS SECTION */}
       <div className={styles.stepSection}>
-        <div className={styles.imageCtn}>
-          <img className={styles.courseImage} src="/courseMockup.png" />
-        </div>
+        {mounted && !isTablet && (
+          <div className={styles.imageCtn}>
+            <img className={styles.courseImage} src="/courseMockup.png" />
+          </div>
+        )}
 
         <div className={styles.stepContentCtn}>
           <div className={styles.sectionHeader}>
@@ -571,7 +529,11 @@ const page = () => {
               We make accessing your course simple and hassle-free.
             </span>
           </div>
-
+          {mounted && isTablet && (
+            <div className={styles.imageCtn}>
+              <img className={styles.courseImage} src="/courseMockup.png" />
+            </div>
+          )}
           <div className={styles.stepCtn}>
             <div className={styles.line}></div>
             <div className={styles.step}>
@@ -625,10 +587,12 @@ const page = () => {
         <div className={styles.textCtn}>
           <span className={styles.heading}>Get Your Access Code Today</span>
           <span className={styles.subheading}>
-            Join professionals who have elevated their expertise through The
+            {mounted && !isTablet
+              ? `Join professionals who have elevated their expertise through The
             Biomechanics Method. Purchase your access code from the Only
             India-based distributor & reseller of The BioMechanics Method
-            Corrective Exercise Specialist course.
+            Corrective Exercise Specialist course.`
+              : `Get The Biomechanics Method access code from India’s official distributor.`}
           </span>
         </div>
 
