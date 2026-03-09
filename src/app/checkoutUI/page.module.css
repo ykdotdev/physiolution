@@ -1,0 +1,397 @@
+.layoutFrame{
+    height: calc(100dvh - 2*var(--spacings-xs));
+    border-radius: var(--border-radius-xs);
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    overflow: hidden;
+}
+
+.leftCtn{
+}
+
+.rightCtn {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacings-l);
+}
+
+.paymentModal{
+    width: 60%;
+    min-width: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--spacings-l);
+    align-self: stretch;
+}
+
+.input {
+    /* Input */
+
+    /* Auto layout */
+    padding:0  var(--spacings-s);
+    font-size: 1.4rem;
+    line-height: 1.6;
+    width: 100%;
+    height: var(--font-sizes-l-text);
+    background: var(--white);
+    /* Light Gray */
+    border: 1px solid var(--light-gray);
+    box-shadow: none;
+    border-radius: var(--border-radius-xs);
+
+    /* Inside auto layout */
+    flex: none;
+    align-self: stretch;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.input::placeholder {
+    /* Placeholder Text */
+
+    font-weight: 400;
+    font-size: 1.4rem;
+    /* Light Gray */
+    color: var(--light-gray);
+}
+
+.label {
+/* Personal details */
+
+    font-weight: 500;
+    font-size: 1.4rem;
+
+    /* Gray */
+    color: var(--gray);
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.shippingForm{
+    
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacings-m);
+    align-self: stretch;
+}
+
+.formRow{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacings-xs);
+}
+
+.combinedInputs{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+}
+
+.input1{
+    border-radius: var(--border-radius-xs) var(--border-radius-xs) 0 0;
+}
+
+.input2{
+    border-radius: 0 0 var(--border-radius-xs) var(--border-radius-xs)
+}
+
+.billingInputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: var(--spacings-xs);
+    /* height: fit-content; */
+    align-self: stretch;
+}
+
+.inputState:invalid {
+    font-weight: 400;
+    /* Dark Gray */
+    color: var(--dark-gray);
+    
+}
+
+.selectWrapper {
+    position: relative;
+    display: flex;
+    align-self: stretch;
+    flex-direction: row;
+}
+
+.selectWrapper select {
+    flex: 1;
+    /* White */
+    background-color: var(--white) !important;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: var(--black);
+    padding-right: var(--spacings-sm);
+    width: 100%;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Light Gray */
+    border: 1px solid var(--light-gray);
+
+}
+
+.selectWrapper .icon {
+    pointer-events: none;
+    position: absolute;
+    /* Dark Gray */
+    color: var(--light-gray);
+    right: var(--spacings-xs);
+    top: 50%;
+    transform: translateY(-50%);
+    order: 1;
+    height: 1.2rem;
+
+
+}
+
+.selectWrapper option {
+    /* Black */
+    color: var(--black);
+}
+
+.selectWrapper select{
+    font-weight: 400;
+    font-size: 1.4rem;
+    /* Light Gray */
+    color: var(--light-gray);
+}
+
+/* Hide number input arrows (Chrome, Safari, Edge) */
+.billingInputs input[type="number"]::-webkit-outer-spin-button,
+.billingInputs input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.billingInputs input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.billingCtn {
+    /* Billing_Container */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.pricingBreakdownCtn {
+    /* Pricing_Breakdown_Container */
+
+    /* Auto layout */
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0px 0px var(--spacings-sm) 0px;
+    row-gap: var(--spacings-s);
+    /* Gray */
+    border-bottom: 0.5px solid var(--light-gray);
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.pricingRow {
+    /* Net_Pricing_Container */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: var(--spacings-m);
+
+    height: fit-content;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.pricingRow .chargeLabel {
+    /* 2 Items */
+
+    font-weight: 500;
+    font-size: var(--font-sizes-xs-text);
+
+    /* Gray */
+    color: var(--black);
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.pricingRow .priceValue {
+    /* ₹399.99 */
+
+    font-weight: 600;
+    font-size: var(--font-sizes-xs-text);
+    letter-spacing: 0.02rem;
+
+    /* Gray */
+    color: var(--gray);
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.subtotalValue{
+    color: var(--black) !important;
+}
+
+.discountCtn .discountValue {
+/* ₹399.99 */
+
+    font-weight: 600;
+    font-size: var(--font-sizes-xs-text);
+    letter-spacing: 0.02rem;
+
+    /* Green */
+    color: #467845 !important;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.totalCtn {
+    /* Total_Container */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacings-sm) 0px 0px 0px;
+    gap: var(--spacings-m);
+
+    height: fit-content;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.totalLabel {
+    /* Total: */
+
+    font-weight: 600;
+    font-size: var(--font-sizes-s-text);
+
+    /* Black */
+    color: var(--black);
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.totalAmount {
+    /* ₹661.00 */
+
+    font-weight: 600;
+    font-size: var(--font-sizes-m-text);
+    letter-spacing: 0.02rem;
+
+    /* Black */
+    color: var(--black);
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.paymentCTA{
+/* Payment_CTA */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacings-sm) var(--spacings-m);
+    gap: var(--spacings-sm);
+
+    height: fit-content;
+
+    /* Black */
+    background: var(--black);
+    border-radius: var(--border-radius-xs);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.paymentCTA .icon{
+    height: var(--font-sizes-s-text);
+    width: auto;
+}
+
+.paymentCTA .ctaLabel{
+/* Pay with Razorpay */
+
+    font-weight: 500;
+    font-size: var(--font-sizes-s-text);
+
+    /* White */
+    color: var(--white);
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
