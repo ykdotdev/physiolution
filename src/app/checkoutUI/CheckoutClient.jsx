@@ -11,9 +11,17 @@ import { useRouter } from "next/navigation";
 import { useToast } from "@/components/ToastProvider";
 import InputError from "@/components/InputError";
 import Image from "next/image";
+import { useMediaQuery } from "react-responsive";
+import { sizeMobile, sizeTablet } from "@/config/constants";
 
 const CheckoutClient = ({ product}) => {
-  
+    const isMobile = useMediaQuery({ query: `(max-width: ${sizeMobile})` });
+    const isTablet = useMediaQuery({ query: `(max-width: ${sizeTablet})` });
+
+    const [mounted, setMounted] = useState(false);
+    useEffect(() => {
+      setMounted(true);
+    }, []);
   const router = useRouter();
   const { showToast } = useToast();
   const [infoActive, setInfoActive] = useState(false);
@@ -203,7 +211,52 @@ const CheckoutClient = ({ product}) => {
 
   return (
     <div className={styles.layoutFrame}>
-      <div className={styles.leftCtn}></div>
+      <div className={styles.leftCtn}>
+        <div className={styles.cartModal}>
+          <div className={styles.cartHeader}>
+            <span className={styles.cartTitle}>Physiolution.co</span>
+            <div className={styles.itemDetails}>
+              <span className={styles.title}>TBMM-CES Course</span>
+              <span className={styles.subTitle}>
+                The BioMechanics Method Corrective Exercise Specialist (TBMM-
+                CES) Course
+              </span>
+            </div>
+          </div>
+          <div className={styles.itemCard}>
+            <div className={styles.topCtn}>
+              <div className={styles.header}>
+                <div className={styles.itemDetails}>
+                  <div className={styles.nameBadge}>
+                    <span className={styles.title}>TBMM-CES Course</span>
+                    <div className={styles.badge}>
+                      <span className={styles.label}>Most Popular</span>
+                    </div>
+                  </div>
+                  <span className={styles.subTitle}>
+                    | Corrective Exercise Specialist
+                  </span>
+                </div>
+                <div className={styles.itemPricingCtn}>
+                  <span className={styles.discount}>-50%</span>
+                  <span className={styles.price}>₹34250</span>
+                </div>
+              </div>
+              <span className={styles.description}>
+                The BioMechanics Method Corrective Exercise Specialist
+                (TBMM-CES) certificate will be sent to the email address you
+                entered within 24 hours. Please check your inbox for further
+                details.
+              </span>
+            </div>
+            <div className={styles.bottomCtn}>
+              <span className={styles.text}>
+                India’s only authorised distributor and reseller of the TBMM-CES course.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className={styles.rightCtn}>
         <div className={styles.paymentModal}>
           <form className={styles.shippingForm}>
@@ -356,7 +409,13 @@ const CheckoutClient = ({ product}) => {
 
           {/* PAY CTA */}
           <button className={styles.paymentCTA}>
-            <Image src='/razorpay_logo.png' width={20} height={24} className={styles.icon} alt="razorpay logo"></Image>
+            <Image
+              src="/razorpay_logo.png"
+              width={20}
+              height={24}
+              className={styles.icon}
+              alt="razorpay logo"
+            ></Image>
             <span className={styles.ctaLabel}>Pay with RazorPay</span>
           </button>
         </div>

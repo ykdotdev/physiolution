@@ -1,17 +1,75 @@
-.errorCtn{
-    display: flex;
-    align-items: center;
-    gap: var(--spacings-xs);
-    order: 2;
-    color: var(--red);
+.errorWrapper.right{
+    position: absolute;
+    right: var(--spacings-s);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.icon{
+.errorWrapper.top{
+    position: absolute;
+    left: 0;
+    top: calc(-1* var(--spacings-l));
+}
+
+.errorBtn {
+    position: relative;
+    /* Info_Button */
+    cursor: pointer;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    height: fit-content;
+    aspect-ratio: 1 / 1;
+
+    border-radius: var(--border-radius-pill);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    /* align-self: stretch; */
+    flex-grow: 0;
+}
+
+.icon {
+    color: var(--red);
     height: var(--font-sizes-xs-text);
     aspect-ratio: 1 / 1;
 }
 
-.errorMsg{
+.msg {
+    position: absolute;
+    width: fit-content;
+    white-space: nowrap;    
+    
+    padding: var(--spacings-xs) var(--spacings-sm);
+    background: var(--gray);
+    color: var(--white);
     font-weight: 400;
-    font-size: var(--font-sizes-xs-text);
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    border-radius: var(--border-radius-pill);
+
+    pointer-events: none;
+    z-index: 10;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.errorWrapper.right .msg{
+    top: -3.2rem;
+    right: 0;
+}
+
+.errorWrapper.top .msg{
+    top: 50%;
+    left: var(--spacings-m);
+    transform: translateY(-50%);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
 }

@@ -202,7 +202,10 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <Link className={styles.buyNowCta} href="/checkout">
+            <Link
+              className={styles.buyNowCta}
+              href="/checkout?p_id=c2ffbad8-bc93-45d0-974f-b0009d439426"
+            >
               <span className={styles.label}>Buy Course Now</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

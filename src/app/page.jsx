@@ -46,7 +46,7 @@ const page = () => {
                   label="Unlock Access Now"
                   bgColor="#d7fb01"
                   color="#101211"
-                  internal="/checkout"
+                  internal="/checkout?p_id=c2ffbad8-bc93-45d0-974f-b0009d439426"
                 />
 
                 <Link
@@ -283,8 +283,10 @@ const page = () => {
         <div className={styles.sectionHeader}>
           <span className={styles.heading}>Approved for CECs Worldwide</span>
           <span className={styles.subheading}>
-            {mounted && isMobile ? `TBMM-CES course is approved for continuing education credits by 15+ organizations globally.` : `The TBMM-CES course is approved for continuing education credits by
-            15+ major certifying organizations globally`}            
+            {mounted && isMobile
+              ? `TBMM-CES course is approved for continuing education credits by 15+ organizations globally.`
+              : `The TBMM-CES course is approved for continuing education credits by
+            15+ major certifying organizations globally`}
           </span>
         </div>
 
@@ -600,7 +602,7 @@ const page = () => {
           label="Unlock Access Now"
           bgColor="#ef6707"
           color="#fafafa"
-          internal="/checkout"
+          internal="/checkout?p_id=c2ffbad8-bc93-45d0-974f-b0009d439426"
         />
       </div>
 

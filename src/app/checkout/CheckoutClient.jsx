@@ -17,6 +17,7 @@ const CheckoutClient = ({ product}) => {
   const router = useRouter();
   const { showToast } = useToast();
   const [infoActive, setInfoActive] = useState(false);
+  const [isDisabled ,setIsDisabled] = useState(false);
 
   useEffect(() => {
     if (!(product?.current_stock > product?.reserved_stock)) {
@@ -39,6 +40,8 @@ const CheckoutClient = ({ product}) => {
     mode: "onBlur",
   });
 
+  const consentChecked = watch("consent");
+  
   const currentQty = 1;
 
   const [totals, setTotals] = useState({
@@ -93,6 +96,7 @@ const CheckoutClient = ({ product}) => {
 
   const handlePayment = async () => {
     try {
+      setIsDisabled(true);
       // 1️⃣ Get validated shipping details from form
       const formData = getValues();
       // console.log("Shipping data:", formData);
@@ -184,6 +188,7 @@ const CheckoutClient = ({ product}) => {
                   status: "cancelled",
                 }),
               });
+              setIsDisabled(false);
             } catch (err) {
               // console.error("Error cancelling order:", err);
             }
@@ -196,6 +201,7 @@ const CheckoutClient = ({ product}) => {
     } catch (err) {
       // console.error("Payment error:", err);
       alert(err.message || "Something went wrong");
+      setIsDisabled(false);
     }
   };
 
@@ -203,305 +209,269 @@ const CheckoutClient = ({ product}) => {
 
   return (
     <div className={styles.layoutFrame}>
-      <div className={styles.shippingCtn}>
-        <div className={styles.headerCtn}>
-          <BackBtn />
-          <div className={styles.stepLabelCtn}>
-            <div className={styles.iconCtn}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className={styles.stepIcon}
-              >
-                <circle cx="8" cy="21" r="1" />
-                <circle cx="19" cy="21" r="1" />
-                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-              </svg>
+      <div className={styles.leftCtn}>
+        <div className={styles.cartModal}>
+          <div className={styles.cartHeader}>
+            <span className={styles.cartTitle}>Physiolution.co</span>
+            <div className={styles.itemDetails}>
+              <span className={styles.title}>{product.web_content.title}</span>
+              <span className={styles.subTitle}>
+                {product.web_content.subTitle}
+              </span>
             </div>
-            <span className={styles.stepTitle}>Shipping</span>
           </div>
-        </div>
-        <form className={styles.contentForm}>
-          {/* Full Name */}
-          <div className={clsx(styles.gridRowSingle, styles.row1)}>
-            <label htmlFor="fullName" className={styles.label}>
-              Full name *
-            </label>
-            <input
-              type="text"
-              {...register("fullName")}
-              placeholder="Enter your full name"
-              className={styles.input}
-            />
-            {errors.fullName && (
-              <InputError message={errors.fullName.message} />
+          <div className={styles.itemCardErrorWrapper}>
+            {errors.consent && (
+              <InputError msg={errors.consent?.message} position="top" />
             )}
-          </div>
 
-          {/* Email & Phone */}
-          <div className={clsx(styles.gridRowDual, styles.row2)}>
-            <div className={clsx(styles.subColumn, styles.email)}>
-              <label htmlFor="email" className={styles.label}>
-                Email address *
-              </label>
-              <input
-                {...register("email")}
-                type="email"
-                placeholder="Enter your email address"
-                className={clsx(
-                  styles.input,
-                  errors.email && styles.inputError,
-                )}
-              />
-              {errors.email && <InputError message={errors.email.message} />}
-            </div>
-
-            <div className={clsx(styles.subColumn, styles.phoneNumber)}>
-              <label htmlFor="phone" className={styles.label}>
-                Phone number *
-              </label>
-              <input
-                {...register("phone")}
-                type="tel"
-                placeholder="Enter your phone number"
-                className={clsx(
-                  styles.input,
-                  errors.phone && styles.inputError,
-                )}
-              />
-
-              {errors.phone && <InputError message={errors.phone.message} />}
-            </div>
-          </div>
-
-          {/* Address */}
-          <div className={clsx(styles.gridRowSingle, styles.row3)}>
-            <label htmlFor="address" className={styles.label}>
-              Address (House no, Street, Area) *
-            </label>
-            <input
-              {...register("address")}
-              type="text"
-              placeholder="Enter your address"
-              className={styles.input}
-            />
-            {errors.address && <InputError message={errors.address.message} />}
-          </div>
-
-          {/* City & State */}
-          <div className={clsx(styles.gridRowTriple, styles.row4)}>
-            <div className={clsx(styles.subColumn, styles.city)}>
-              <label htmlFor="city" className={styles.label}>
-                City *
-              </label>
-              <input
-                {...register("city")}
-                type="text"
-                placeholder="Enter your city"
-                className={styles.input}
-              />
-              {errors.city && <InputError message={errors.city.message} />}
-            </div>
-
-            <div className={clsx(styles.subColumn, styles.stateDropdown)}>
-              <label htmlFor="state" className={styles.label}>
-                State *
-              </label>
-
-              <div className={styles.selectWrapper}>
-                <select
-                  {...register("state")}
-                  defaultValue=""
-                  required
-                  className={styles.input}
-                >
-                  <option value="" disabled hidden>
-                    Select State
-                  </option>
-
-                  {/* States */}
-                  <option value="AP">Andhra Pradesh</option>
-                  <option value="AR">Arunachal Pradesh</option>
-                  <option value="AS">Assam</option>
-                  <option value="BR">Bihar</option>
-                  <option value="CT">Chhattisgarh</option>
-                  <option value="GA">Goa</option>
-                  <option value="GJ">Gujarat</option>
-                  <option value="HR">Haryana</option>
-                  <option value="HP">Himachal Pradesh</option>
-                  <option value="JH">Jharkhand</option>
-                  <option value="KA">Karnataka</option>
-                  <option value="KL">Kerala</option>
-                  <option value="MP">Madhya Pradesh</option>
-                  <option value="MH">Maharashtra</option>
-                  <option value="MN">Manipur</option>
-                  <option value="ML">Meghalaya</option>
-                  <option value="MZ">Mizoram</option>
-                  <option value="NL">Nagaland</option>
-                  <option value="OR">Odisha</option>
-                  <option value="PB">Punjab</option>
-                  <option value="RJ">Rajasthan</option>
-                  <option value="SK">Sikkim</option>
-                  <option value="TN">Tamil Nadu</option>
-                  <option value="TG">Telangana</option>
-                  <option value="TR">Tripura</option>
-                  <option value="UP">Uttar Pradesh</option>
-                  <option value="UK">Uttarakhand</option>
-                  <option value="WB">West Bengal</option>
-
-                  {/* Union Territories */}
-                  <option value="AN">Andaman and Nicobar Islands</option>
-                  <option value="CH">Chandigarh</option>
-                  <option value="DN">
-                    Dadra and Nagar Haveli and Daman and Diu
-                  </option>
-                  <option value="DL">Delhi</option>
-                  <option value="JK">Jammu and Kashmir</option>
-                  <option value="LA">Ladakh</option>
-                  <option value="LD">Lakshadweep</option>
-                  <option value="PY">Puducherry</option>
-                </select>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className={styles.icon}
-                >
-                  <path d="m6 9 6 6 6-6" />
-                </svg>
-              </div>
-            </div>
-
-            <div className={clsx(styles.subColumn, styles.pincode)}>
-              <label htmlFor="pincode" className={styles.label}>
-                Pincode *
-              </label>
-              <input
-                {...register("pincode")}
-                type="number"
-                placeholder="Enter your pincode"
-                className={styles.input}
-              />
-              {errors.pincode && (
-                <InputError message={errors.pincode.message} />
+            <div
+              className={clsx(
+                styles.itemCard,
+                errors.consent && styles.consentError,
               )}
-            </div>
-          </div>
-        </form>
-      </div>
-      <div className={styles.cartCtn}>
-        <span className={styles.cartTitle}>Your Cart</span>
-        <div className={styles.contentCTACtn}>
-          <div className={styles.contentCtn}>
-            <div className={styles.cartItemCtn}>
-              <div className={styles.itemDetailsCtn}>
-                <div className={styles.imageCtn}>
-                  <Image
-                    className={styles.productImage}
-                    src="/courseCover.png"
-                    alt="Product"
-                    width={155}
-                    height={103}
-                    loading="eager"
-                    fetchPriority="high"
-                  />
-                </div>
-
-                <div className={styles.textCtn}>
-                  <span className={styles.productTitle}>
-                    The BioMechanics Method Corrective Exercise Specialist
-                    Course
-                  </span>
-                  <span className={styles.productVariantText}>
-                    | TBMM-CES-Course
-                  </span>
-                </div>
-              </div>
-
-              <div className={styles.priceQuantityCtn}>
-                <div className={styles.priceCtn}>
-                  <span className={styles.discountedPrice}>
-                    ₹{product.price}
-                  </span>
-                  {product.current_stock > 0 ? (
-                    <span className={styles.originalPrice}>₹{product.mrp}</span>
-                  ) : (
-                    ""
-                  )}
-                </div>
-
-                {product.current_stock > 0 ? (
-                  ""
-                ) : (
-                  <div className={styles.outOfStockCtn}>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className={styles.icon}
-                    >
-                      <circle cx="12" cy="12" r="10" />
-                      <line x1="12" x2="12" y1="8" y2="12" />
-                      <line x1="12" x2="12.01" y1="16" y2="16" />
-                    </svg>
-                    <span className={styles.text}>Out of Stock</span>
+            >
+              <div className={styles.topCtn}>
+                <div className={styles.header}>
+                  <div className={styles.itemDetails}>
+                    <div className={styles.nameBadge}>
+                      <span className={styles.title}>
+                        {product.web_content.title}
+                      </span>
+                      <div className={styles.badge}>
+                        <span className={styles.label}>Most Popular</span>
+                      </div>
+                    </div>
+                    <span className={styles.subTitle}>
+                      | {product.web_content.barText}
+                    </span>
                   </div>
-                )}
-              </div>
-            </div>
-
-            <div className={styles.billingCtn}>
-              <div className={styles.pricingBreakdownCtn}>
-                <div className={clsx(styles.pricingRow, styles.netPricingCtn)}>
-                  <span className={styles.chargeLabel}>{currentQty} Items</span>
-                  <span className={styles.priceValue}>
-                    ₹{totals.subtotal.toFixed(2)}
-                  </span>
+                  <div className={styles.itemPricingCtn}>
+                    <span className={styles.discount}>
+                      -
+                      {(
+                        ((product.mrp - product.price) / product.mrp) *
+                        100
+                      ).toFixed(0)}
+                      %
+                    </span>
+                    <span className={styles.price}>₹{product.price}</span>
+                  </div>
                 </div>
-
-                <div className={clsx(styles.pricingRow, styles.taxCtn)}>
-                  <span className={styles.chargeLabel}>Tax</span>
-                  <span className={styles.priceValue}>Inclusive</span>
-                </div>
-
-                {/* <div className={clsx(styles.pricingRow, styles.discountCtn)}>
-                  <span className={styles.chargeLabel}>
-                    Discount{" "}
-                    {appliedPromoCode && `(${appliedPromoCode.discount}%)`}
-                  </span>
-                  <span
-                    className={clsx(styles.priceValue, styles.discountValue)}
-                  >
-                    - ₹{totals.discount?.toFixed(2)}
-                  </span>
-                </div> */}
+                <span className={styles.description}>
+                  {product.web_content.description}
+                </span>
               </div>
-              <div className={styles.totalCtn}>
-                <span className={styles.totalLabel}>Total:</span>
-                <span className={styles.totalAmount}>
-                  ₹{totals.totalRupees.toFixed(2)}
+              <div className={styles.bottomCtn}>
+                <input
+                  type="checkbox"
+                  {...register("consent", {
+                    required: "You must accept the consent before continuing",
+                  })}
+                  className={styles.checkbox}
+                />
+                <span className={styles.text}>
+                  {product.web_content.consent}
                 </span>
               </div>
             </div>
           </div>
-          <StepCTA
-            currentStep={1}
-            btnStatus="active"
+        </div>
+      </div>
+      <div className={styles.rightCtn}>
+        <div className={styles.paymentModal}>
+          <form className={styles.shippingForm}>
+            {/* Personal Details */}
+            <div className={styles.formRow}>
+              <span className={styles.label}>Personal Details</span>
+              <div className={styles.combinedInputs}>
+                <div className={styles.inputErrorWrapper}>
+                  <input
+                    type="text"
+                    {...register("fullName")}
+                    placeholder="Full Name"
+                    className={clsx(styles.input, styles.input1)}
+                  />
+                  {errors?.fullName && (
+                    <InputError msg={errors.fullName?.message} />
+                  )}
+                </div>
+                <div className={styles.inputErrorWrapper}>
+                  <input
+                    type="text"
+                    {...register("address")}
+                    placeholder="Housing Address"
+                    className={clsx(styles.input, styles.input2)}
+                  />
+                  {errors?.address && (
+                    <InputError msg={errors.address?.message} />
+                  )}
+                </div>
+              </div>
+            </div>
+            {/* Contact Details */}
+            <div className={styles.formRow}>
+              <span className={styles.label}>Contact Details</span>
+              <div className={styles.combinedInputs}>
+                <div className={styles.inputErrorWrapper}>
+                  <input
+                    {...register("phone")}
+                    type="tel"
+                    placeholder="Phone number"
+                    className={clsx(styles.input, styles.input1)}
+                  />
+                  {errors?.phone && <InputError msg={errors.phone?.message} />}
+                </div>
+                <div className={styles.inputErrorWrapper}>
+                  <input
+                    {...register("email")}
+                    type="email"
+                    placeholder="Email address"
+                    className={clsx(styles.input, styles.input2)}
+                  />
+                  {errors?.email && <InputError msg={errors.email?.message} />}
+                </div>
+              </div>
+            </div>
+            {/* Billing Details */}
+            <div className={styles.formRow}>
+              <span className={styles.label}>Billing Details</span>
+              <div className={styles.billingInputs}>
+                <div className={styles.inputErrorWrapper}>
+                  <input
+                    {...register("city")}
+                    type="text"
+                    placeholder="City"
+                    className={clsx(styles.input, styles.inputState)}
+                  />
+                  {errors?.city && <InputError msg={errors.city?.message} />}
+                </div>
+                <div className={styles.selectWrapper}>
+                  <select
+                    {...register("state")}
+                    defaultValue=""
+                    required
+                    className={clsx(
+                      styles.input,
+                      errors?.state && styles.error,
+                    )}
+                  >
+                    <option value="" disabled hidden>
+                      State
+                    </option>
+
+                    {/* States */}
+                    <option value="AP">Andhra Pradesh</option>
+                    <option value="AR">Arunachal Pradesh</option>
+                    <option value="AS">Assam</option>
+                    <option value="BR">Bihar</option>
+                    <option value="CT">Chhattisgarh</option>
+                    <option value="GA">Goa</option>
+                    <option value="GJ">Gujarat</option>
+                    <option value="HR">Haryana</option>
+                    <option value="HP">Himachal Pradesh</option>
+                    <option value="JH">Jharkhand</option>
+                    <option value="KA">Karnataka</option>
+                    <option value="KL">Kerala</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="MH">Maharashtra</option>
+                    <option value="MN">Manipur</option>
+                    <option value="ML">Meghalaya</option>
+                    <option value="MZ">Mizoram</option>
+                    <option value="NL">Nagaland</option>
+                    <option value="OR">Odisha</option>
+                    <option value="PB">Punjab</option>
+                    <option value="RJ">Rajasthan</option>
+                    <option value="SK">Sikkim</option>
+                    <option value="TN">Tamil Nadu</option>
+                    <option value="TG">Telangana</option>
+                    <option value="TR">Tripura</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="UK">Uttarakhand</option>
+                    <option value="WB">West Bengal</option>
+
+                    {/* Union Territories */}
+                    <option value="AN">Andaman and Nicobar Islands</option>
+                    <option value="CH">Chandigarh</option>
+                    <option value="DN">
+                      Dadra and Nagar Haveli and Daman and Diu
+                    </option>
+                    <option value="DL">Delhi</option>
+                    <option value="JK">Jammu and Kashmir</option>
+                    <option value="LA">Ladakh</option>
+                    <option value="LD">Lakshadweep</option>
+                    <option value="PY">Puducherry</option>
+                  </select>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className={styles.icon}
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </div>
+                <div className={styles.inputErrorWrapper}>
+                  <input
+                    {...register("pincode")}
+                    type="number"
+                    placeholder="Pincode"
+                    className={styles.input}
+                  />
+                  {errors?.pincode && (
+                    <InputError msg={errors.pincode?.message} />
+                  )}
+                </div>
+              </div>
+            </div>
+          </form>
+          <div className={styles.billingCtn}>
+            <div className={styles.pricingBreakdownCtn}>
+              <div className={clsx(styles.pricingRow, styles.netPricingCtn)}>
+                <span className={styles.chargeLabel}>{currentQty} Items</span>
+                <span className={clsx(styles.priceValue, styles.subtotalValue)}>
+                  ₹{totals.subtotal.toFixed(2)}
+                </span>
+              </div>
+
+              <div className={clsx(styles.pricingRow, styles.taxCtn)}>
+                <span className={styles.chargeLabel}>Tax</span>
+                <span className={styles.priceValue}>Inclusive</span>
+              </div>
+              <div className={clsx(styles.pricingRow, styles.discountCtn)}>
+                <span className={styles.chargeLabel}>Discount</span>
+                <span className={styles.discountValue}>
+                  - ₹{product.mrp - product.price}
+                </span>
+              </div>
+            </div>
+            <div className={styles.totalCtn}>
+              <span className={styles.totalLabel}>Total due:</span>
+              <span className={styles.totalAmount}>
+                ₹{totals.totalRupees.toFixed(2)}
+              </span>
+            </div>
+          </div>
+
+          {/* PAY CTA */}
+          <button
+            className={styles.paymentCTA}
+            disabled={isDisabled}
             onClick={handlePaymentClick}
-          />
+          >
+            <Image
+              src="/razorpay_logo.png"
+              width={20}
+              height={24}
+              className={styles.icon}
+              alt="razorpay logo"
+            ></Image>
+            <span className={styles.ctaLabel}>Pay with Razorpay</span>
+          </button>
         </div>
       </div>
     </div>
