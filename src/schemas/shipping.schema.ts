@@ -22,6 +22,6 @@ export const shippingSchema = z.object({
     .string()
     .length(6, "Enter a valid Pincode"), 
   consent: z.literal(true, {
-    message: "You must accept the consent before continuing",
+    message: "You must accept the checkbox before continuing",
   }),
 });

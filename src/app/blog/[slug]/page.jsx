@@ -112,6 +112,9 @@ export default async function BlogPostPage({ params }) {
               ul: ({ node, ...props }) => (
                 <ul className={styles.articleList} {...props} />
               ),
+              ol: ({ node, ...props }) => (
+                <ul className={styles.articleList} {...props} />
+              ),
               li: ({ node, ...props }) => <li {...props} />,
               strong: ({ node, ...props }) => <strong {...props} />,
               cimg: ({ node, ...props }) => <CImg {...props} />,
@@ -148,7 +151,7 @@ export default async function BlogPostPage({ params }) {
             datePublished: post.date,
             author: {
               "@type": "Person",
-              name: "Dr. Vandy's",
+              name: "Physiolution",
             },
           }),
         }}

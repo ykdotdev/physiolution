@@ -461,8 +461,17 @@
   height: 100%;
 
   /* Light Gray */
-  border: 1px solid #ADADAD;
+  border: 1px solid var(--light-gray);
   border-radius: 8px;
+}
+
+.featureCard.clickable{
+  cursor: pointer;
+  transition: scale 0.3s ease;
+}
+
+.featureCard.clickable:hover{
+  scale: 1.01;
 }
 
 .featureCard .icon{

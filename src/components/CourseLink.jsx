@@ -3,9 +3,7 @@ import React from 'react'
 
 const CourseLink = () => {
   return (
-    <Link href='/products/tbmm-ces'>
-      Checkout
-    </Link>
+    ""
   )
 }
 

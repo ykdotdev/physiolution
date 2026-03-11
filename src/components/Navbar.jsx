@@ -44,7 +44,7 @@ const Navbar = () => {
               Videos
             </Link>
             <Link className={clsx(styles.navItem)} href="/blog">
-              Blog
+              Blogs
             </Link>
             <Link className={clsx(styles.navItem)} href="/contact">
               Contact
@@ -86,7 +86,7 @@ const Navbar = () => {
               Videos
             </Link>
             <Link className={clsx(styles.navItem)} href="/blog">
-              Blog
+              Blogs
             </Link>
             <a
               className={clsx(styles.navItem)}

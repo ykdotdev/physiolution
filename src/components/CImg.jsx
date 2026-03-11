@@ -15,7 +15,7 @@ console.log(src)
         style={{
           width: "auto",
           maxHeight: "var(--spacings-xl8)",
-          margin: "var(--spacings-xl) auto 0 auto",
+          margin: "0 auto",
         }}
       />
   );

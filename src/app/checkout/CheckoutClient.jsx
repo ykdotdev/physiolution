@@ -37,8 +37,12 @@ const CheckoutClient = ({ product}) => {
     formState: { errors, isSubmitting },
   } = useForm({
     resolver: zodResolver(shippingSchema),
+    criteriaMode: "firstError",
     mode: "onBlur",
   });
+
+  const firstErrorField = Object.keys(errors)?.[0];
+  console.log(firstErrorField)
 
   const consentChecked = watch("consent");
   
@@ -210,6 +214,7 @@ const CheckoutClient = ({ product}) => {
   return (
     <div className={styles.layoutFrame}>
       <div className={styles.leftCtn}>
+        
         <div className={styles.cartModal}>
           <div className={styles.cartHeader}>
             <span className={styles.cartTitle}>Physiolution.co</span>
@@ -221,14 +226,10 @@ const CheckoutClient = ({ product}) => {
             </div>
           </div>
           <div className={styles.itemCardErrorWrapper}>
-            {errors.consent && (
-              <InputError msg={errors.consent?.message} position="top" />
-            )}
-
             <div
               className={clsx(
                 styles.itemCard,
-                errors.consent && styles.consentError,
+                firstErrorField === "consent" && styles.consentError,
               )}
             >
               <div className={styles.topCtn}>
@@ -275,6 +276,27 @@ const CheckoutClient = ({ product}) => {
                 </span>
               </div>
             </div>
+            {firstErrorField === "consent" && (
+              <span className={styles.errorCtn}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className={styles.icon}
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" x2="12" y1="8" y2="12" />
+                  <line x1="12" x2="12.01" y1="16" y2="16" />
+                </svg>
+                <span className={styles.message}>
+                  {errors.consent?.message}
+                </span>
+              </span>
+            )}
           </div>
         </div>
       </div>
@@ -292,7 +314,7 @@ const CheckoutClient = ({ product}) => {
                     placeholder="Full Name"
                     className={clsx(styles.input, styles.input1)}
                   />
-                  {errors?.fullName && (
+                  {firstErrorField === "fullName" && (
                     <InputError msg={errors.fullName?.message} />
                   )}
                 </div>
@@ -303,7 +325,7 @@ const CheckoutClient = ({ product}) => {
                     placeholder="Housing Address"
                     className={clsx(styles.input, styles.input2)}
                   />
-                  {errors?.address && (
+                  {firstErrorField === "address" && (
                     <InputError msg={errors.address?.message} />
                   )}
                 </div>
@@ -320,7 +342,9 @@ const CheckoutClient = ({ product}) => {
                     placeholder="Phone number"
                     className={clsx(styles.input, styles.input1)}
                   />
-                  {errors?.phone && <InputError msg={errors.phone?.message} />}
+                  {firstErrorField === "phone" && (
+                    <InputError msg={errors.phone?.message} />
+                  )}
                 </div>
                 <div className={styles.inputErrorWrapper}>
                   <input
@@ -329,7 +353,9 @@ const CheckoutClient = ({ product}) => {
                     placeholder="Email address"
                     className={clsx(styles.input, styles.input2)}
                   />
-                  {errors?.email && <InputError msg={errors.email?.message} />}
+                  {firstErrorField === "email" && (
+                    <InputError msg={errors.email?.message} />
+                  )}
                 </div>
               </div>
             </div>
@@ -344,7 +370,9 @@ const CheckoutClient = ({ product}) => {
                     placeholder="City"
                     className={clsx(styles.input, styles.inputState)}
                   />
-                  {errors?.city && <InputError msg={errors.city?.message} />}
+                  {firstErrorField === "city" && (
+                    <InputError msg={errors.city?.message} />
+                  )}
                 </div>
                 <div className={styles.selectWrapper}>
                   <select
@@ -353,7 +381,7 @@ const CheckoutClient = ({ product}) => {
                     required
                     className={clsx(
                       styles.input,
-                      errors?.state && styles.error,
+                      firstErrorField === "state" && styles.error,
                     )}
                   >
                     <option value="" disabled hidden>
@@ -422,7 +450,7 @@ const CheckoutClient = ({ product}) => {
                     placeholder="Pincode"
                     className={styles.input}
                   />
-                  {errors?.pincode && (
+                  {firstErrorField === "pincode" && (
                     <InputError msg={errors.pincode?.message} />
                   )}
                 </div>
@@ -459,7 +487,7 @@ const CheckoutClient = ({ product}) => {
 
           {/* PAY CTA */}
           <button
-            className={styles.paymentCTA}
+            className={clsx(styles.paymentCTA, isDisabled && styles.disabled)}
             disabled={isDisabled}
             onClick={handlePaymentClick}
           >

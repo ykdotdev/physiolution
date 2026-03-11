@@ -24,6 +24,7 @@
     border-right: 1px solid #FAFAFA;
 }
 
+
 .cartModal {
     /* Cart_Modal */
     width: 60%;
@@ -136,6 +137,9 @@
 
 .itemCardErrorWrapper{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacings-sm);
 }
 
 .itemCard {
@@ -160,11 +164,41 @@
 
     /* Inside auto layout */
     flex: none;
-    order: 1;
+    order: 0;
     align-self: stretch;
     flex-grow: 0;
 
     transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.errorCtn {
+    width: fit-content;
+    white-space: nowrap;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--spacings-xs);
+    padding: var(--spacings-xs) var(--spacings-xs);
+    background-color: rgb(255, 0, 0, 0.7);
+    
+    border-radius: 0.8rem;
+
+    pointer-events: none;
+    z-index: 10;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.errorCtn .icon{
+    color: var(--white);
+    height: var(--font-sizes-xs-text);
+    aspect-ratio: 1 / 1;
+}
+
+.errorCtn .message{
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
 }
 
 .itemCard.consentError{
@@ -818,6 +852,10 @@
     order: 2;
     align-self: stretch;
     flex-grow: 0;
+}
+
+.paymentCTA.disabled{
+    background-color: var(--dark-gray);
 }
 
 .paymentCTA .icon {

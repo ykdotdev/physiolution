@@ -244,7 +244,8 @@ const page = () => {
               </span>
             </div>
           </div>
-          <div className={styles.featureCard}>
+          <div onClick={()=>{window.location.href =
+            "https://www.thebiomechanicsmethod.com/find-a-specialist-near-you/";}} className={clsx(styles.featureCard, styles.clickable)}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

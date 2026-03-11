@@ -43,13 +43,14 @@
     width: fit-content;
     white-space: nowrap;    
     
-    padding: var(--spacings-xs) var(--spacings-sm);
-    background: var(--gray);
+    padding: var(--spacings-xs) var(--spacings-xs);
+    background-color: rgb(255, 0, 0, 0.7);
+    backdrop-filter:blur(1px);
     color: var(--white);
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 1.2rem;
-    border-radius: var(--border-radius-pill);
+    border-radius: 0.8rem;
 
     pointer-events: none;
     z-index: 10;
