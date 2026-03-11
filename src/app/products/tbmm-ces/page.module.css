@@ -639,7 +639,7 @@
 }
 
 .details h2 {
-    font-size: var(--font-sizes-xs-text);
+    font-size: var(--font-sizes-m-text);
     font-weight: 600;
     color: var(--dark-gray);
     margin-top: var(--spacings-ml);
