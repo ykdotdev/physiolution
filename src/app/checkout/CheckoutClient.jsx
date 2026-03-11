@@ -462,7 +462,7 @@ const CheckoutClient = ({ product}) => {
               <div className={clsx(styles.pricingRow, styles.netPricingCtn)}>
                 <span className={styles.chargeLabel}>{currentQty} Items</span>
                 <span className={clsx(styles.priceValue, styles.subtotalValue)}>
-                  ₹{totals.subtotal.toFixed(2)}
+                  ₹{(product.mrp * currentQty).toFixed(2)}
                 </span>
               </div>
 
