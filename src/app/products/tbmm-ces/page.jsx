@@ -41,13 +41,18 @@ const page = () => {
           <div className={styles.videoPlayer}>
             <video
               ref={videoRef}
-              src="https://res.cloudinary.com/dr0c1ufev/video/upload/TBMM-CES_Course_Sample_Clip_nlp13i.mp4"
               className={styles.video}
               preload="metadata"
               onCanPlayThrough={() => setLoaded(true)}
               playsInline
               poster="/promoThumbnail.jpg"
-            ></video>
+              controls
+            >
+              <source
+                src="https://res.cloudinary.com/dr0c1ufev/video/upload/f_auto,q_auto/TBMM-CES_Course_Sample_Clip_nlp13i.mp4"
+                type="video/mp4"
+              />
+            </video>
             <button
               onClick={toggleVideo}
               disabled={!loaded}
