@@ -40,9 +40,12 @@ const Navbar = () => {
             <Link className={clsx(styles.navItem)} href="/about">
               About Us
             </Link>
-            <Link className={clsx(styles.navItem)} href="/videos">
+            <a
+              className={clsx(styles.navItem)}
+              href="https://www.youtube.com/@Physiolution.biomechanics"
+            >
               Videos
-            </Link>
+            </a>
             <Link className={clsx(styles.navItem)} href="/blog">
               Blogs
             </Link>

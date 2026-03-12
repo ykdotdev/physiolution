@@ -2,7 +2,8 @@ export const BLOG_POSTS = [
   {
     id: "your-mental-habits",
     title: "Are Your Mental Habits Making Your Pain Worse?",
-    excerpt: "Excerpt_Here",
+    excerpt:
+      "Negative mental habits worsen chronic pain by affecting posture, muscles, and brain.",
     image: "/blogs/b1/cover.jpg",
     readTime: "10 min read",
     date: "2026-02-18",
@@ -29,7 +30,7 @@ Being aware of your destructive mental habits, and teaching your clients how to 
 
 <CourseLink></CourseLink>
 
-To learn more from Justin Price about how the body is affected by physical, mental and environmental stressors, and what you can do to help you and your clients overcome these problems with corrective exercise, check out the industry’s top-rated corrective exercise specialist certification - **The BioMechanics Method Corrective Exercise Specialist course** available through Physiolution.
+To learn more from Justin Price about how the body is affected by physical, mental and environmental stressors, and what you can do to help you and your clients overcome these problems with corrective exercise, check out the industry’s top-rated corrective exercise specialist certification - <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>
 
 **References:**
 
@@ -52,7 +53,8 @@ Justin Price is one of the world’s foremost experts in musculoskeletal assessm
   {
     id: "ankle-pain",
     title: "Assessing and Correcting Foot and Ankle Pain- By Justin Price",
-    excerpt: "Excerpt_Here",
+    excerpt:
+      "Foot and ankle pain often caused by overpronation and limited dorsiflexion.",
     image: "/blogs/b2/cover.jpg",
     readTime: "10 min read",
     date: "2026-02-18",
@@ -130,7 +132,7 @@ Learn The BioMechanics Method proven system for uncovering the root cause of cli
 
 **Contributed By:**
 
-Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of **The BioMechanics Method Corrective Exercise Specialist certification** (TBMM-CES) available through Physiolution. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.
+Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.
 
 **References:**
 
@@ -147,7 +149,8 @@ Justin Price is one of the world’s foremost experts in musculoskeletal assessm
   {
     id: "trunk-rotation",
     title: "How to Assess and Improve Trunk Rotation- By Justin Price",
-    excerpt: "Excerpt_Here",
+    excerpt:
+      "Trunk rotation mobility prevents pain, improves movement, and can be enhanced through assessments and stretching exercises.",
     image: "/blogs/b3/cover.jpg",
     readTime: "10 min read",
     date: "2026-02-18",
@@ -197,13 +200,13 @@ The ability to rotate the trunk effectively is paramount to achieving optimal mo
 
 Want to be the go-to expert for fixing aches and pains?
 
-Discover how to assess the body like a pro with the industry’s highest-rated corrective exercise specialist certification - **The BioMechanics Method.** Master the art of corrective exercise today through Physiolution.
+Discover how to assess the body like a pro with the industry’s highest-rated corrective exercise specialist certification - <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>
 
 <CourseLink></CourseLink>
 
 **Contributed By:**
 
-Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of **The BioMechanics Method Corrective Exercise Specialist certification** (TBMM-CES) available through Physiolution. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.
+Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a> (https://www.netafit.org/certifications/specialty/corrective_exercise_specialist/)). The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.
 
 **References:**
 
@@ -220,7 +223,8 @@ Justin Price is one of the world’s foremost experts in musculoskeletal assessm
   {
     id: "benefits-of-ces",
     title: "Benefits of Becoming a Corrective Exercise Specialist",
-    excerpt: "Excerpt_Here",
+    excerpt:
+      "Corrective exercise specialization helps trainers attract more clients, increase income, prevent injuries, and improve client results.",
     image: "/blogs/b4/cover.jpg",
     readTime: "10 min read",
     date: "2026-02-18",
@@ -240,7 +244,7 @@ Justin Price is one of the world’s foremost experts in musculoskeletal assessm
 
 Helping clients overcome aches and pains can be a profitable and rewarding experience. A sound understanding of biomechanics will allow you to develop and use your practical corrective exercise skills. It also provides an outlet for you to market your unique services and become one of the industry’s most sought-after professionals.
 
-To learn more from Justin Price about corrective exercise, and take your business and client services to the next level, check out the fitness industry’s highest rated corrective exercise specialist certification **The BioMechanics Method – now available through Physiolution**.
+To learn more from Justin Price about corrective exercise, and take your business and client services to the next level, check out the fitness industry’s highest rated corrective exercise specialist certification <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>.
 
 <CourseLink></CourseLink>
 
@@ -261,7 +265,8 @@ Justin Price is one of the world’s foremost experts in musculoskeletal assessm
   {
     id: "better-posture",
     title: "Can Better Posture Make You Happier?",
-    excerpt: "Excerpt_Here",
+    excerpt:
+      "Posture reflects emotions, and improving posture can boost confidence, mood, and overall well-being.",
     image: "/blogs/b5/cover.jpg",
     readTime: "10 min read",
     date: "2026-02-18",
@@ -313,7 +318,8 @@ Justin Price is one of the world’s foremost experts in musculoskeletal assessm
   {
     id: "ankle-pain-info",
     title: "Causes and Cures for Ankle Pain- By Justin Price",
-    excerpt: "Excerpt_Here",
+    excerpt:
+      "Ankle pain often results from limited dorsiflexion and movement imbalances throughout the body.",
     image: "/blogs/b6/cover.jpg",
     readTime: "10 min read",
     date: "2026-02-18",
@@ -429,7 +435,8 @@ Justin Price is one of the world’s foremost experts in musculoskeletal assessm
   {
     id: "rounded-shoulders-info",
     title: "Causes and Cures for Rounded Shoulders",
-    excerpt: "Excerpt_Here",
+    excerpt:
+      "Rounded shoulders result from posture, stress, and muscle imbalances, causing pain, breathing issues, and reduced function.",
     image: "/blogs/b7/cover.jpg",
     readTime: "10 min read",
     date: "2026-02-18",
@@ -543,7 +550,8 @@ Justin Price is one of the world’s foremost experts in musculoskeletal assessm
   {
     id: "neck-shoulder-pain",
     title: "Corrective Exercises for Neck and Shoulder Pain- By Justin Price",
-    excerpt: "Excerpt_Here",
+    excerpt:
+      "Neck and shoulder pain often result from mobility restrictions, poor alignment, and muscle imbalances.",
     image: "/blogs/b8/cover.jpg",
     readTime: "10 min read",
     date: "2026-02-18",
@@ -664,7 +672,8 @@ Rolf, I. P. (1989). Rolfing: Reestablishing the Natural Alignment and Structura
     id: "leg-length-discrepancy",
     title:
       "Leg Length Discrepancy: Is it Causing Your Pain and Dysfunction?- By Justin Price",
-    excerpt: "Excerpt_Here",
+    excerpt:
+      "Leg length discrepancies can misalign the body, causing compensation, pain, and musculoskeletal dysfunction.",
     image: "/blogs/b9/cover.jpg",
     readTime: "10 min read",
     date: "2026-02-18",
@@ -740,7 +749,8 @@ Justin Price is one of the world’s foremost experts in musculoskeletal assessm
   {
     id: "tight-hips",
     title: "How Tight Hips Can Cause Knee Pain",
-    excerpt: "Excerpt_Here",
+    excerpt:
+      "Tight hips restrict rotation, causing stress on knees and leading to pain.",
     image: "/blogs/b10/cover.jpg",
     readTime: "10 min read",
     date: "2026-02-18",
@@ -799,7 +809,7 @@ Note: If the pressure of the foam roller is too much you can regress this exerci
 
 Many of the largest and most powerful muscles of the body cross the hips and attach to the leg.<sup>2,3</sup> Restrictions in these muscles affect the ability of the hips to function correctly and, subsequently, the amount of stress experienced by the knees. The simple hip assessment and effective corrective exercise strategies outlined in this blog can help both you and your clients experience substantially less knee pain as well as improved performance in both the short and long-term.
 
-To learn more about how to discover the underlying causes of you and your client’s aches and pains check out **The BioMechanics Method Corrective Exercise Specialist program available through Physiolution.**
+To learn more about how to discover the underlying causes of you and your client’s aches and pains check out <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>
 
 <CourseLink></CourseLink>
 
@@ -826,7 +836,8 @@ Justin Price is one of the world’s foremost experts in musculoskeletal assessm
   {
     id: "ai-replacement",
     title: "Is AI Replacing Fitness Professionals?- By Justin Price",
-    excerpt: "Excerpt_Here",
+    excerpt:
+      "Corrective exercise specialists outperform AI by diagnosing root movement dysfunctions and providing personalized, hands-on solutions.",
     image: "/blogs/b11/cover.jpg",
     readTime: "10 min read",
     date: "2026-02-18",
@@ -866,7 +877,7 @@ Most AI analysis is limited to the sagittal (forward/backward) and frontal (side
 
 For the foreseeable future, AI can be relied upon to count reps, track metrics, and provide valuable general guidance. It is a digital generalist that can "see" movement and record data at a scale humans can't. But AI lacks the deeper "why" and intuition that you can provide as a corrective exercise specialist. When it comes to truly solving the complex puzzles of human movement, preventing injury, enhancing performance, and fostering genuine well-being, **the human touch remains paramount**. That is the distinct and real advantage you have in a world built on algorithms.
 
-If you are a fitness, exercise, or health professional interested in learning how to really connect with clients as you assess and correct the underlying causes of their aches and pains, enroll in the industry's highest-rated Corrective Exercise Specialist certification course from The BioMechanics Method available through Physiolution.
+If you are a fitness, exercise, or health professional interested in learning how to really connect with clients as you assess and correct the underlying causes of their aches and pains, enroll in the industry's highest-rated Corrective Exercise Specialist certification course from <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>
 
 <CourseLink></CourseLink>
 
@@ -877,7 +888,8 @@ Justin Price is one of the world’s foremost experts in musculoskeletal assessm
   {
     id: "old-scar-tissue",
     title: "Is Old Scar Tissue Causing Your Pain and Dysfunction?",
-    excerpt: "Excerpt_Here",
+    excerpt:
+      "Scar tissue can restrict movement, causing pain, muscle imbalance, and reduced athletic performance.",
     image: "/blogs/b12/cover.jpg",
     readTime: "10 min read",
     date: "2026-02-18",
@@ -974,7 +986,8 @@ Justin Price is one of the world’s foremost experts in musculoskeletal assessm
     id: "static-postural-assessments",
     title:
       "Beyond the Plumb Line: Precision Skills for Static Postural Assessments- By Justin Price",
-    excerpt: "Excerpt_Here",
+    excerpt:
+      "Static postural assessments reveal musculoskeletal imbalances, helping trainers prevent injuries and design safer exercise programs.",
     image: "/blogs/b13/cover.jpg",
     readTime: "10 min read",
     date: "2026-02-18",
@@ -1024,7 +1037,7 @@ As your client experiences reduced pain and increased movement confidence, you w
 
 **Contributed By:**
 
-Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of [The BioMechanics Method Corrective Exercise Specialist certification](https://www.netafit.org/certifications/specialty/corrective_exercise_specialist/) (TBMM-CES) available through Physiolution. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.
+Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a> The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.
 
 **References:**
 
@@ -1038,7 +1051,8 @@ Justin Price is one of the world’s foremost experts in musculoskeletal assessm
     id: "corrective-vs-physical-therapy",
     title:
       "Corrective Exercise vs. Physical Therapy - What’s The Difference?- By Justin Price",
-    excerpt: "Excerpt_Here",
+    excerpt:
+      "Corrective exercise specialists assess movement imbalances, helping clients exercise safely and bridge therapy and fitness.",
     image: "/blogs/b14/cover.jpg",
     readTime: "10 min read",
     date: "2026-02-18",
@@ -1097,7 +1111,8 @@ Justin Price is one of the world’s foremost experts in musculoskeletal assessm
     id: "tight-hip-flexors",
     title:
       "Tight Hip Flexors Can Cause Lower Back Pain, Knee Pain and Foot Pain",
-    excerpt: "Excerpt_Here",
+    excerpt:
+      "Tight hip flexors from sitting and poor posture cause pain and movement dysfunction.",
     image: "/blogs/b15/cover.jpg",
     readTime: "10 min read",
     date: "2026-02-18",
@@ -1179,7 +1194,8 @@ Justin Price is one of the world’s foremost experts in musculoskeletal assessm
   {
     id: "lower-back-pain",
     title: "When Lower Back Pain Is Not a Lower Back Problem- By Justin Price",
-    excerpt: "Excerpt_Here",
+    excerpt:
+      "Lower back pain often results from mobility restrictions in other body parts.",
     image: "/blogs/b16/cover.jpg",
     readTime: "10 min read",
     date: "2026-02-18",
@@ -1296,6 +1312,6 @@ Science World Report.Com.
 
 **Contributed By:**
 
-Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of The BioMechanics Method Corrective Exercise Specialist certification ([TBMM-CES](https://www.netafit.org/certifications/specialty/corrective_exercise_specialist/)) available through Physiolution. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
+Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a> The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.`,
   },
 ];

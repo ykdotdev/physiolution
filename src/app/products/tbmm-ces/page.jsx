@@ -27,7 +27,13 @@ const page = () => {
       }
     };
 
-    const [loaded, setLoaded] = useState(false);
+    const [loaded, setLoaded] = useState(false); //Checkout Button
+
+    const [isLoading, setIsLoading] = useState(false);
+
+    const handleClick = ()=>{
+      setIsLoading(true);
+    }
     
   return (
     <>
@@ -38,7 +44,7 @@ const page = () => {
           <div className={styles.videoPlayer}>
             <video
               ref={videoRef}
-              src="https://stream.mux.com/2S502Iio9dd5RhVaV8wScPP2iroAdbW3HY0028EyA01qzY.m3u8"
+              src="https://res.cloudinary.com/dr0c1ufev/video/upload/TBMM-CES_Course_Sample_Clip_nlp13i.mp4"
               className={styles.video}
               preload="metadata"
               onCanPlayThrough={() => setLoaded(true)}
@@ -205,22 +211,51 @@ const page = () => {
             <Link
               className={styles.buyNowCta}
               href="/checkout?p_id=c2ffbad8-bc93-45d0-974f-b0009d439426"
+              onClick={(e) => {
+                if (isLoading) {
+                  e.preventDefault();
+                  return;
+                }
+                setIsLoading(true);
+              }}
             >
               <span className={styles.label}>Buy Course Now</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className={styles.icon}
-              >
-                <circle cx="12" cy="12" r="10" />
-                <path d="m12 16 4-4-4-4" />
-                <path d="M8 12h8" />
-              </svg>
+              {isLoading ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className={styles.spinner}
+                >
+                  <path d="M12 2v4" />
+                  <path d="m16.2 7.8 2.9-2.9" />
+                  <path d="M18 12h4" />
+                  <path d="m16.2 16.2 2.9 2.9" />
+                  <path d="M12 18v4" />
+                  <path d="m4.9 19.1 2.9-2.9" />
+                  <path d="M2 12h4" />
+                  <path d="m4.9 4.9 2.9 2.9" />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className={styles.icon}
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="m12 16 4-4-4-4" />
+                  <path d="M8 12h8" />
+                </svg>
+              )}
             </Link>
           </div>
         </section>

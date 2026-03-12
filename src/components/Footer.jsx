@@ -25,12 +25,6 @@ const Footer = () => {
             height={500}
             alt="logo"
           />
-          {mounted && !isTablet && (
-            <span className={styles.label}>
-              Only India-based distributor & reseller of The BioMechanics Method
-              Corrective Exercise Specialist course.
-            </span>
-          )}
         </div>
 
         <div className={styles.footerColumn}>
@@ -41,6 +35,13 @@ const Footer = () => {
             </Link>
             <Link className={styles.item} href="/faq">
               FAQs
+            </Link>
+            <Link className={styles.item} href="/shipping-policy">
+              Shipping Policy
+            </Link>
+
+            <Link className={styles.item} href="/privacy-policy">
+              Privacy Policy
             </Link>
           </div>
         </div>
@@ -54,9 +55,15 @@ const Footer = () => {
             <Link className={styles.item} href="/blog">
               Blogs
             </Link>
+            <Link className={styles.item} href="/terms-of-usage">
+              Terms of Usage
+            </Link>
+            <Link className={styles.item} href="/refund-exchange-policy">
+              Refund & Exchange Policy
+            </Link>
             {mounted && isMobile && (
               <Link className={styles.item} href="/terms-conditions">
-                Terms
+                Terms & Conditions
               </Link>
             )}
           </div>

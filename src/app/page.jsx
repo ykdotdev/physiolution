@@ -18,6 +18,12 @@ const page = () => {
     useEffect(() => {
       setMounted(true);
     }, []);
+
+    const [isLoading, setIsLoading] = useState(false);
+
+    const handleClickSpinner = ()=>{
+      setIsLoading(true);
+    };
     
   return (
     <div className={styles.landingPage}>
@@ -51,25 +57,47 @@ const page = () => {
 
                 <Link
                   className={styles.ctaSecondary}
-                  href={"/products/tbmm-ces"}
+                  href={"/products/tbmm-ces"} onClick={handleClickSpinner}
                 >
                   <span className={styles.label}>Learn More</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className={styles.icon}
-                  >
-                    <path d="m5 9 7-7 7 7" />
-                    <path d="M12 16V2" />
-                    <circle cx="12" cy="21" r="1" />
-                  </svg>
+                  {isLoading ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className={styles.spinner}
+                    >
+                      <path d="M12 2v4" />
+                      <path d="m16.2 7.8 2.9-2.9" />
+                      <path d="M18 12h4" />
+                      <path d="m16.2 16.2 2.9 2.9" />
+                      <path d="M12 18v4" />
+                      <path d="m4.9 19.1 2.9-2.9" />
+                      <path d="M2 12h4" />
+                      <path d="m4.9 4.9 2.9 2.9" />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className={styles.icon}
+                    >
+                      <path d="m5 9 7-7 7 7" />
+                      <path d="M12 16V2" />
+                      <circle cx="12" cy="21" r="1" />
+                    </svg>
+                  )}
                 </Link>
               </div>
             </div>
@@ -244,8 +272,13 @@ const page = () => {
               </span>
             </div>
           </div>
-          <div onClick={()=>{window.location.href =
-            "https://www.thebiomechanicsmethod.com/find-a-specialist-near-you/";}} className={clsx(styles.featureCard, styles.clickable)}>
+          <div
+            onClick={() => {
+              window.location.href =
+                "https://www.thebiomechanicsmethod.com/find-a-specialist-near-you/";
+            }}
+            className={clsx(styles.featureCard, styles.clickable)}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
