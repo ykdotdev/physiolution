@@ -16,6 +16,10 @@
     border-radius: var(--border-radius-pill);
 }
 
+.CTA.disabled{
+    cursor: default;
+}
+
 .CTA .label {
     /* Course Login */
 

@@ -2,16 +2,24 @@
 import { useState } from 'react';
 import styles from './Button.module.css'
 import Link from 'next/link';
+import clsx from 'clsx';
 
 const Button = ({label, bgColor, color, internal, external}) => {
   const [isLoading, setIsLoading] = useState(false);
-  const handleClick = ()=>{
-    setIsLoading(true);
 
-  }
 
   return internal ? (
-    <Link className={styles.CTA} href={internal} onClick={handleClick}>
+    <Link
+      className={clsx(styles.CTA, isLoading && styles.disabled)}
+      href={internal}
+      onClick={(e) => {
+        if (isLoading) {
+          e.preventDefault();
+          return;
+        }
+        setIsLoading(true);
+      }}
+    >
       <span className={styles.label}>{label}</span>
       <div className={styles.iconCtn} style={{ backgroundColor: bgColor }}>
         {isLoading ? (

@@ -21,10 +21,6 @@ const page = () => {
 
     const [isLoading, setIsLoading] = useState(false);
 
-    const handleClickSpinner = ()=>{
-      setIsLoading(true);
-    };
-    
   return (
     <div className={styles.landingPage}>
       <div className={styles.navHeroWrapper}>
@@ -56,8 +52,15 @@ const page = () => {
                 />
 
                 <Link
-                  className={styles.ctaSecondary}
-                  href={"/products/tbmm-ces"} onClick={handleClickSpinner}
+                  className={clsx(styles.ctaSecondary, isLoading && styles.disabled)}
+                  href={"/products/tbmm-ces"}
+                  onClick={(e) => {
+                    if (isLoading) {
+                      e.preventDefault();
+                      return;
+                    }
+                    setIsLoading(true);
+                  }}
                 >
                   <span className={styles.label}>Learn More</span>
                   {isLoading ? (

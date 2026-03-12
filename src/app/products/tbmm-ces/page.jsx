@@ -31,9 +31,6 @@ const page = () => {
 
     const [isLoading, setIsLoading] = useState(false);
 
-    const handleClick = ()=>{
-      setIsLoading(true);
-    }
     
   return (
     <>
@@ -209,7 +206,7 @@ const page = () => {
               </div>
             </div>
             <Link
-              className={styles.buyNowCta}
+              className={clsx(styles.buyNowCta, isLoading && styles.disabled)}
               href="/checkout?p_id=c2ffbad8-bc93-45d0-974f-b0009d439426"
               onClick={(e) => {
                 if (isLoading) {

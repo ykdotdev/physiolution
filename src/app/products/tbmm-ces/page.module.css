@@ -415,6 +415,10 @@
     flex-grow: 0;
 }
 
+.buyNowCta.disabled{
+    cursor: default;
+}
+
 .buyNowCta .label{
 /* Buy Course Now */
 

@@ -182,6 +182,10 @@
   flex-grow: 0;
 }
 
+.ctaSecondary.disabled{
+  cursor: default;
+}
+
 .ctaSecondary .label{
 /* Learn More */
 
