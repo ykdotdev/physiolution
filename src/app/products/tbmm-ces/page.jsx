@@ -43,13 +43,11 @@ const page = () => {
               ref={videoRef}
               className={styles.video}
               preload="metadata"
-              onCanPlayThrough={() => setLoaded(true)}
-              playsInline
+              onLoadedData={() => setLoaded(true)}
               poster="/promoThumbnail.jpg"
-              controls
             >
               <source
-                src="https://res.cloudinary.com/dr0c1ufev/video/upload/f_auto,q_auto/TBMM-CES_Course_Sample_Clip_nlp13i.mp4"
+                src="https://res.cloudinary.com/dr0c1ufev/video/upload/w_720,h_404,c_limit,f_auto,q_auto/TBMM-CES_Course_Sample_Clip_nlp13i.mp4"
                 type="video/mp4"
               />
             </video>
