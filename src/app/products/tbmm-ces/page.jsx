@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link';
 import styles from './page.module.css'
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import clsx from 'clsx';
 import Image from 'next/image';
 import BackBtn from '@/components/BackBtn';
@@ -26,10 +26,29 @@ const page = () => {
         setIsPlaying(false);
       }
     };
+    
 
-    const [loaded, setLoaded] = useState(false); //Checkout Button
+    const [loaded, setLoaded] = useState(false); 
 
-    const [isLoading, setIsLoading] = useState(false);
+      useEffect(() => {
+        const video = videoRef.current;
+        if (!video) return;
+
+        const handleLoaded = () => setLoaded(true);
+
+        video.addEventListener("loadedmetadata", handleLoaded);
+
+        // If metadata already loaded
+        if (video.readyState >= 1) {
+          setLoaded(true);
+        }
+
+        return () => {
+          video.removeEventListener("loadedmetadata", handleLoaded);
+        };
+      }, []);
+
+    const [isLoading, setIsLoading] = useState(false);//Checkout Buttonq
 
     
   return (
@@ -42,11 +61,15 @@ const page = () => {
             <video
               ref={videoRef}
               className={styles.video}
-              preload="metadata"
-              onLoadedData={() => setLoaded(true)}
+              preload="auto"
               poster="/promoThumbnail.jpg"
+              playsInline
+              onLoadedMetadata={() => setLoaded(true)}
             >
-              <source src="https://res.cloudinary.com/dr0c1ufev/video/upload/f_mp4,q_auto,w_720/TBMM-CES_Course_Sample_Clip_nlp13i.mp4" />
+              <source
+                src="https://res.cloudinary.com/dr0c1ufev/video/upload/f_mp4,q_auto,w_720/TBMM-CES_Course_Sample_Clip_nlp13i.mp4"
+                type="video/mp4"
+              />
             </video>
             <button
               onClick={toggleVideo}
