@@ -42,7 +42,6 @@ const CheckoutClient = ({ product}) => {
   });
 
   const firstErrorField = Object.keys(errors)?.[0];
-  console.log(firstErrorField)
 
   const consentChecked = watch("consent");
   
@@ -211,10 +210,24 @@ const CheckoutClient = ({ product}) => {
 
   const handlePaymentClick = handleSubmit(handlePayment);
 
-  return (
+  return isDisabled ? (
+    <div className={styles.loadWrapper}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className={styles.loadIcon}
+      >
+        <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+      </svg>
+    </div>
+  ) : (
     <div className={styles.layoutFrame}>
       <div className={styles.leftCtn}>
-        
         <div className={styles.cartModal}>
           <div className={styles.cartHeader}>
             <span className={styles.cartTitle}>Physiolution.co</span>
