@@ -63,7 +63,7 @@ const Footer = () => {
             </Link>
             {mounted && isMobile && (
               <Link className={styles.item} href="/terms-conditions">
-                Terms & Conditions
+                TBMM Terms & Conditions
               </Link>
             )}
           </div>
@@ -75,7 +75,7 @@ const Footer = () => {
             <a href="mailto:info@physiolution.co" className={styles.item}>
               info@physiolution.co
             </a>
-            <a className={styles.item}>India</a>
+            <span className={clsx(styles.item, styles.unclickable)}>India</span>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@ const Footer = () => {
         {mounted && !isMobile && (
           <div className={styles.boringCtn}>
             <Link className={styles.label} href="/terms-conditions">
-              Terms & Conditions
+              TBMM Terms & Conditions
             </Link>
           </div>
         )}

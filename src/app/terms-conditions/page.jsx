@@ -1,11 +1,11 @@
 "use client"
-import HomeBtn from '@/components/HomeBtn'
 import styles from './page.module.css'
+import BackBtn from '@/components/BackBtn';
 
 const page = () => {
   return (
     <>
-      <HomeBtn />
+      <BackBtn />
       <div className={styles.mainContainer}>
         <article className={styles.content}>
           <h1 className={styles.h1}>TERMS AND CONDITIONS</h1>

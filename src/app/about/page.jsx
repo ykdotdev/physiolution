@@ -27,8 +27,8 @@ const page = () => {
               healthcare professionals etc. <br />
               <br />
               Dr. Vandy’s Lab is the authorized distributor and reseller in
-              India for the courses of The Biomechanics Method, Belton, U.S. of
-              Texas. Through its education brand Physiolution, the organization
+              India for the courses of The Biomechanics Method, San Diego, CA in
+              the US. Through its education brand Physiolution, the organization
               promotes, markets, and sells the online course of The BioMechanics
               Method Corrective Exercise Specialist (TBMM-CES) online
               certificate course in India, making internationally recognized

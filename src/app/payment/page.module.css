@@ -25,288 +25,56 @@
     align-items: center;
 }
 
-.paymentCard {
-    /* Payment_Card */
+.paymentModal{
+/* Payment_Modal */
 
     /* Auto layout */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: var(--spacings-m) var(--spacings-l);
-    gap: var(--spacings-ml);
-
-    /* position: absolute; */
-    /* width: 780px; */
-    max-width: 56rem;
-    min-width: 32rem;
-    width: 70%;
-    height: fit-content;
-    margin: 0 auto;
-    /* top: calc(50%); */
-
-    /* White */
-    background: #FFFFFF;
-    /* Black */
-    border: 1px solid #07080C;
-    border-radius: var(--border-radius-l);
-
-}
-
-.headerCtn {
-    /* Header_Container */
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
-    gap: var(--spacings-ml);
+    padding: 0px;
+    gap: var(--spacings-m);
 
-    height: fit-content;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.stepLabelCtn {
-    /* Page_Label_Container */
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: var(--spacings-xs) var(--spacings-sm) var(--spacings-xs) var(--spacings-xs);
-    gap: var(--spacings-sm);
-
-    /* margin: 0 auto; */
     width: fit-content;
     height: fit-content;
-
-    /* Black */
-    background: #07080C;
-    border-radius: var(--border-radius-pill);
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    max-width: 100rem;
 }
 
-.iconCtn {
-    /* Icon_Container */
+.header{
+/* Header */
 
     /* Auto layout */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: var(--spacings-s);
+    padding: 0px;
+    gap: var(--spacings-sm);
 
-    width: var(--spacings-l);
-    height: var(--spacings-l);
-    aspect-ratio: 1 /1;
+    height: fit-content;
 
-    /* Light Yellow */
-    background: #FCF9DD;
-    border-radius: var(--border-radius-pill);
 
     /* Inside auto layout */
     flex: none;
     order: 0;
+    align-self: stretch;
     flex-grow: 0;
 }
 
-.iconCtn .stepIcon {
-    /* Vector */
-    /* width: 20px; Fill ctn height */
-    height: 100%;
-
-    /* Black */
-    color: #07080C;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.stepTitle {
-    /* Your Cart */
+.orgTitleText{
+/* Physiolution.co */
 
     font-weight: 500;
-    font-size: var(--font-sizes-s-text);
-    letter-spacing: 0.02rem;
+    font-size: var(--font-sizes-m-text);
 
-    /* White */
-    color: #FFFFFF;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-.contentCTACtn {
-    /* Content_CTA_Container */
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: var(--spacings-l);
-
-    height: fit-content;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.contentCtn{
-/* Content_Container */
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: var(--spacings-l);
-
-    height: fit-content;
+    /* Gray */
+    color: var(--gray);
 
 
     /* Inside auto layout */
     flex: none;
     order: 0;
-    align-self: stretch;
     flex-grow: 0;
-}
-
-.paymentStatusCtn{
-/* Payment_Status_Container */
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: var(--spacings-ml);
-
-    height: fit-content;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.paymentStatusCtn .iconSuccess{
-/* Vector */
-
-    width: var(--spacings-xl6);
-
-    /* Green */
-    fill: #467845;
-    /* White */
-    color: #FCFDF8;
-
-    /* Inside auto layout */
-    order: 0;
-    flex-grow: 0;
-}
-
-.paymentStatusCtn .iconFail {
-    /* Vector */
-
-    width: var(--spacings-xl6);
-    rotate: 45deg;
-    /* RED */
-    fill: var(--red);
-    /* White */
-    color: #FCFDF8;
-    
-    /* Inside auto layout */
-    order: 0;
-    flex-grow: 0;
-}
-
-/* Wrapper around icon for ambient circle */
-.iconWrapper {
-    position: relative;
-    width: 30%;
-    aspect-ratio: 1 / 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Ambient circle behind the icon */
-.iconWrapper::before {
-content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    /* slightly bigger than icon */
-    height: 100%;
-    
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    filter: blur(10px);
-
-    /* pulsing animation */
-    animation: pulse 5s infinite;
-}
-
-.iconWrapper.success::before{
-    background: var(--green);
-    /* green ambient color */
-}
-
-.iconWrapper.fail::before{
-    background: var(--red);
-        /* red ambient color */
-}
-
-/* Pulse keyframes */
-@keyframes pulse {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 0.4;
-    }
-
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
-        opacity: 0.1;
-    }
-
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 0.4;
-    }
-}
-
-/* The SVG icon itself */
-.icon {
-    width: 90%;
-    height: 90%;
-    color: #467845;
-    /* this sets stroke color via currentColor */
-    z-index: 2;
 }
 
 .paymentStatusText{
@@ -317,97 +85,7 @@ content: '';
     letter-spacing: 0.02rem;
 
     /* Black */
-    color: #07080C;
-
-
-    /* Inside auto layout */
-    order: 1;
-    flex-grow: 0;
-}
-
-.shippingOrderIDCtn{
-/* Shipping_OrderID_Container */
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: var(--spacings-xl4);
-
-    height: fit-content;
-
-
-    /* Inside auto layout */
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.shippingOrderIDCtn .shippingUpdateMessage{
-/* You will receive shipping updates via SMS/Email once your order is dispatched. */
-
-    font-weight: 500;
-    font-size: var(--font-sizes-s-text);
-    text-align: center;
-
-    /* Black */
-    color: #07080C;
-
-
-    /* Inside auto layout */
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.orderIDCtn{
-/* OrderID_Container */
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacings-m) 0px 0px;
-    gap: var(--spacings-m);
-
-    height: fit-content;
-
-    /* Gray */
-    border-top: 1px dashed #6E7070;
-
-    /* Inside auto layout */
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.orderIDCtn .orderIDLabel{
-/* Order ID */
-
-    font-weight: 500;
-    font-size: var(--font-sizes-xs-text);
-
-    /* Gray */
-    color: #6E7070;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.orderIDCtn .orderIDValue{
-/* ORD_2025_00123 */
-
-    font-weight: 600;
-    font-size: var(--font-sizes-xs-text);
-    letter-spacing: 0.02rem;
-
-    /* Gray */
-    color: #6E7070;
+    color: var(--black);
 
 
     /* Inside auto layout */
@@ -416,38 +94,32 @@ content: '';
     flex-grow: 0;
 }
 
-.stepCTA {
-    /* Step_CTA */
+.animationCtn {
+    width: 40dvw;
+    max-width: 54rem;
+    min-width: 40rem;
+}
 
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--spacings-m);
-    gap: 0;
+.animation{
+    width: 100%;
+    height: 100%;
+}
+
+.ctaBtn{
+    background-color: var(--black);
     width: fit-content;
     height: fit-content;
-
-    /* Black */
-    background: #07080C;
+    padding: var(--spacings-sm) var(--spacings-m);
     border-radius: var(--border-radius-pill);
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    /* align-self: stretch; */
-    flex-grow: 0;
 }
 
-.stepCTA .label {
-    /* Confirm Checkout */
+.ctaBtn .label{
+/* Retry */
 
     font-weight: 500;
     font-size: var(--font-sizes-s-text);
-    letter-spacing: 0.02rem;
 
-    /* White */
+    /* Gray */
     color: var(--white);
 
 

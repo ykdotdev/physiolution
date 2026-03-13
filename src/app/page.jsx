@@ -52,7 +52,10 @@ const page = () => {
                 />
 
                 <Link
-                  className={clsx(styles.ctaSecondary, isLoading && styles.disabled)}
+                  className={clsx(
+                    styles.ctaSecondary,
+                    isLoading && styles.disabled,
+                  )}
                   href={"/products/tbmm-ces"}
                   onClick={(e) => {
                     if (isLoading) {
@@ -276,32 +279,47 @@ const page = () => {
             </div>
           </div>
           <div
+            className={clsx(styles.featureCard, styles.clickable)}
             onClick={() => {
               window.location.href =
                 "https://www.thebiomechanicsmethod.com/find-a-specialist-near-you/";
             }}
-            className={clsx(styles.featureCard, styles.clickable)}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className={styles.icon}
-            >
-              <path d="M8 2v4" />
-              <path d="M12 2v4" />
-              <path d="M16 2v4" />
-              <rect width="16" height="18" x="4" y="4" rx="2" />
-              <path d="M8 10h6" />
-              <path d="M8 14h8" />
-              <path d="M8 18h5" />
-            </svg>
+            <div className={styles.iconsCtn}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className={styles.icon}
+              >
+                <path d="M8 2v4" />
+                <path d="M12 2v4" />
+                <path d="M16 2v4" />
+                <rect width="16" height="18" x="4" y="4" rx="2" />
+                <path d="M8 10h6" />
+                <path d="M8 14h8" />
+                <path d="M8 18h5" />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className={styles.ctaIcon}
+              >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </div>
             <div className={styles.textCtn}>
               <span className={styles.heading}>
                 Specialist Referral Register
@@ -582,8 +600,11 @@ const page = () => {
               <div className={styles.stepDetails}>
                 <span className={styles.title}>Purchase Your Access Code</span>
                 <span className={styles.description}>
-                  Complete your purchase through Physiolution to receive your
-                  unique access code.
+                  Complete your purchase through{" "}
+                  <Link className={styles.aTag} href="/products/tbmm-ces">
+                    Physiolution
+                  </Link>{" "}
+                  to receive your unique access code.
                 </span>
               </div>
             </div>

@@ -22,10 +22,7 @@
     /* Top_container */
 
     /* Auto layout */
-    /* display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start; */
+
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     padding: 0px;
@@ -163,6 +160,10 @@
     flex-grow: 0;
 }
 
+.footerItems .item.unclickable{
+    cursor: default;
+}
+
 .legalTerms {
     /* Legal_Terms */
 
@@ -236,6 +237,17 @@
     flex-grow: 0;
 }
 
+@media (max-width: 768px) {
+    .topCtn {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: var(--spacings-m);
+        }
+
+    .getInTouchColumn {
+        display: none;
+    }
+}
+
 @media (max-width: 470px) {
     .topCtn{
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -243,10 +255,6 @@
     }
 
     .footerLogoCtn{
-        display: none;
-    }
-
-    .getInTouchColumn{
         display: none;
     }
 

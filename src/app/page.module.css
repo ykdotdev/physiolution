@@ -564,6 +564,28 @@
   flex-grow: 0;
 }
 
+.featureCard .iconsCtn{
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconsCtn .ctaIcon{
+/* Vector */
+
+  width: var(--font-sizes-s-text);
+  height: var(--font-sizes-s-text);
+
+  /* Gray */
+  color: var(--black);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
 .partnershipsSection{
 /* Partnerships_Section */
 
@@ -1305,7 +1327,7 @@
 } 
 
 .aTag{
-  color: var(--dark-gray);
+  color: var(--blue);
 }
 
 .step{
