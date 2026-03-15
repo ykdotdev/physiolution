@@ -62,7 +62,7 @@ const Footer = () => {
               Refund & Exchange Policy
             </Link>
             {mounted && isMobile && (
-              <Link className={styles.item} href="/terms-conditions">
+              <Link className={styles.item} href="/terms-conditions-tbmm">
                 TBMM Terms & Conditions
               </Link>
             )}
@@ -86,7 +86,7 @@ const Footer = () => {
         </span>
         {mounted && !isMobile && (
           <div className={styles.boringCtn}>
-            <Link className={styles.label} href="/terms-conditions">
+            <Link className={styles.label} href="/terms-conditions-tbmm">
               TBMM Terms & Conditions
             </Link>
           </div>

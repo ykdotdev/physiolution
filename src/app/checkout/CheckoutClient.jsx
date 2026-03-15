@@ -284,8 +284,12 @@ const CheckoutClient = ({ product}) => {
                   })}
                   className={styles.checkbox}
                 />
-                <span className={styles.text}>
-                  {product.web_content.consent}
+                <span
+                  className={styles.text}
+                  dangerouslySetInnerHTML={{
+                    __html: product.web_content.consent,
+                  }}
+                >
                 </span>
               </div>
             </div>

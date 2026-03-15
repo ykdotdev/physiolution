@@ -55,7 +55,7 @@ const Navbar = () => {
             {mounted && isNavOverflow && (
               <a
                 className={clsx(styles.navItem)}
-                href="https://www.thebiomechanicsmethod.com/my-course-log-in/"
+                href="https://thebiomechanicsmethod.inspire360.com/login?destination=%2F"
               >
                 Login
               </a>
@@ -65,7 +65,7 @@ const Navbar = () => {
             {mounted && !isNavOverflow && (
               <Button
                 label="Course Login"
-                external="https://www.thebiomechanicsmethod.com/my-course-log-in/"
+                external="https://thebiomechanicsmethod.inspire360.com/login?destination=%2F"
               />
             )}
             <Image

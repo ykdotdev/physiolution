@@ -206,7 +206,7 @@ Discover how to assess the body like a pro with the industry’s highest-rated c
 
 **Contributed By:**
 
-Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a> (https://www.netafit.org/certifications/specialty/corrective_exercise_specialist/)). The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.
+Justin Price is one of the world’s foremost experts in musculoskeletal assessment and corrective exercise and creator of <a href='/products/tbmm-ces'>The BioMechanics Method Corrective Exercise Specialist certification (TBMM-CES) available through Physiolution</a>. The BioMechanics Method is the fitness industry’s highest-rated CES credential with trained professionals in over 80 countries. Justin is also the author of several books including The BioMechanics Method for Corrective Exercise academic textbook, a former IDEA Personal Trainer of the Year, and a subject matter expert for The American Council on Exercise, Human Kinetics, TRX, BOSU, Arthritis Today, BBC, Discovery Health, Los Angeles Times, Men's Health, MSNBC, New York Times, Newsweek, Time, Wall Street Journal, WebMD and Tennis Magazine.
 
 **References:**
 
@@ -594,7 +594,7 @@ To evaluate the position of the neck and head instruct your client to sit on a c
 
 Any corrective exercise program should begin with strategic self-myofascial release or trigger point massage techniques to loosen up soft tissue restrictions that might prevent correct movement before progressing to stretching and/or strengthening exercises (Price, 2018; Rolf, 1989).  Here is a series of self-myofascial release, stretches and strengthening exercises that should be performed in the order shown to help address the imbalances discussed (and assessed) above (Price, 2018).
 
-## _Tennis Ball on Front of Shoulder and Arm_This self-myofascial release technique will loosen up the muscles of the chest, anterior shoulder and biceps muscles to facilitate better internal rotation of the arm.
+## Tennis Ball on Front of Shoulder and Arm This self-myofascial release technique will loosen up the muscles of the chest, anterior shoulder and biceps muscles to facilitate better internal rotation of the arm.
 
 <CImg src='/blogs/b8/4.jpg' width=803 height=600></CImg>
 

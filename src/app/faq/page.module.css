@@ -6,6 +6,10 @@
   padding: var(--spacings-l) var(--spacings-sm);
 }
 
+.section a{
+  color: var(--blue);
+}
+
 .content {
   width: 100%;
   max-width: 92rem;

@@ -487,6 +487,10 @@
     flex-grow: 0;
 }
 
+.bottomCtn input[type= "checkbox"]{
+    cursor: pointer;
+}
+
 .bottomCtn .text {
     /* The only authorised distributor The BioMechanics Method Corrective Exercise Specialist (TBMM- CES) Course */
 
@@ -502,6 +506,10 @@
     flex: 1;
     order: 0;
 
+}
+
+.bottomCtn .text a{
+    color: var(--blue);
 }
 
 .rightCtn {

@@ -46,6 +46,10 @@
   margin-bottom: var(--spacings-m);
 }
 
+.section a {
+  color: var(--blue);
+}
+
 .section p {
   font-size: 1.4rem;
   line-height: 1.4;

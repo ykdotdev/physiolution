@@ -657,7 +657,7 @@ const page = () => {
             <li>National Academy of Sports Medicine (NSAM) – 1.9 CEUs</li>
             <li>American College of Sports Medicine (ACSM) – 80.0 CECs</li>
             <li>
-              Athletics and Fitness Association of America (AFAA) – 15 CEUs
+              Athletics and Fitness Association of America (AFAA) – 1.9 CEUs
             </li>
             <li>Board of Certification (BOC) – 32 Cat A CEUs</li>
             <li>National Exercise Trainers Association (NETA) – 80.0 CECs</li>
