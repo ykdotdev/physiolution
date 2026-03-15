@@ -70,9 +70,9 @@ const page = () => {
                 <p>
                   After activation, you can access your course anytime through
                   the official learning portal:{" "}
-                  <a href="https://thebiomechanicsmethod.inspire360.com/">
-                    https://thebiomechanicsmethod.inspire360.com/
-                  </a>
+                  <a href="https://thebiomechanicsmethod.inspire360.com/login?destination=%2F">
+                    https://thebiomechanicsmethod.inspire360.com/login?destination=%2F
+                  </a>{" "}
                   Simply log in using the account credentials you created during
                   registration. Your access code is required only once during
                   initial activation.
