@@ -231,7 +231,7 @@ const page = () => {
               If you have any questions about the terms and conditions, your
               course purchase, or to inquire about licensing options for The
               BioMechanics Method content please don’t hesitate to contact us.
-              Call (619) 295-7773 or send an email to{""}
+              Call (619) 295-7773 or send an email to{" "}
               <a href="mailto:customerservice@thebiomechanicsmethod.com">
                 customerservice@thebiomechanicsmethod.com
               </a>
@@ -248,7 +248,7 @@ const page = () => {
               purposes. By using our services you agree to the use of the data
               that we collect in accordance with this privacy policy. Your use
               of this website gives us the right to collect that information.
-              Our website address is{""}
+              Our website address is{" "}
               <a href="https://www.thebiomechanicsmethod.com.">
                 https://www.thebiomechanicsmethod.com.
               </a>
@@ -349,7 +349,7 @@ const page = () => {
             </p>
             <ul className={styles.list}>
               <li>
-                Email:{""}
+                Email:{" "}
                 <a href="mailto:info@thebiomechanicsmethod.com"></a>{" "}
                 info@thebiomechanicsmethod.com
               </li>
@@ -401,7 +401,7 @@ const page = () => {
             <p>
               If you have any questions about your purchase please don’t
               hesitate to contact us. Call (619) 295-7773 or send an email to
-              {""}
+              {" "}
               <a href="mailto:customerservice@thebiomechanicsmethod.com">
                 customerservice@thebiomechanicsmethod.com.
               </a>
