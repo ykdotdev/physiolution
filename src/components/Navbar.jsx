@@ -93,7 +93,7 @@ const Navbar = () => {
             </Link>
             <a
               className={clsx(styles.navItem)}
-              href="https://www.thebiomechanicsmethod.com/my-course-log-in/"
+              href="https://thebiomechanicsmethod.inspire360.com/login?destination=%2F"
             >
               Login
             </a>
