@@ -443,7 +443,7 @@ const page = () => {
                 <span className={styles.label}>REPs NZ • 20 CPDs</span>
               </div>
               <div className={styles.aabItem}>
-                <span className={styles.label}>AFAA • 1.5 CEUs</span>
+                <span className={styles.label}>AFAA • 1.9 CEUs</span>
               </div>
               <div className={styles.aabItem}>
                 <span className={styles.label}>VBOPT • 32 Type 1</span>
