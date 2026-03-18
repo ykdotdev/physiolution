@@ -48,7 +48,7 @@ const page = () => {
                 <p>Follow these simple steps:</p>
                 <ul>
                   <li>
-                    <a href="https://thebiomechanicsmethod.inspire360.com/login?destination=%2F">
+                    <a href="https://thebiomechanicsmethod.inspire360.com/thebiomechanicsmethod/2e_TBMM-CES">
                       Visit the course activation page
                     </a>
                   </li>

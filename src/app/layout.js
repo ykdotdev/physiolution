@@ -7,9 +7,9 @@ import Loading from "./loading";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Physiolution",
+  title: "Physiolution | TBMM Corrective Exercise Specialist Certification",
   description:
-    "DESCRIPTION_HERE",
+    "Advance your career with the TBMM Corrective Exercise Specialist certification. Learn biomechanics, movement assessment, and corrective exercise techniques to improve movement and reduce pain.",
 };
 
 export default function RootLayout({ children }) {
