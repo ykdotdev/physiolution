@@ -37,7 +37,8 @@ export async function POST(req) {
   const orderData = data[0]; // first (and only) row
   const orderAmount = Number(orderData.total_paise); // paise, integer
   const razorpayOrder = await razorpay.orders.create({
-    amount: orderAmount,
+    // amount: orderAmount,
+    amount: 100,
     currency: "INR",
     receipt: orderData.id,
   });
