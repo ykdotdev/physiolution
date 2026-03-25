@@ -27,7 +27,8 @@ const page = () => {
       }
     };
     
-
+    const price = 48999;
+    const mrp = 72999;
     const [loaded, setLoaded] = useState(false); 
 
       useEffect(() => {
@@ -140,7 +141,13 @@ const page = () => {
               </div>
               <div className={styles.discountCtn}>
                 <div className={styles.indicator}></div>
-                <div className={styles.discount}>29% off</div>
+                <div className={styles.discount}>
+                  {(
+                    ((mrp - price) / mrp) *
+                    100
+                  ).toFixed(0)}
+                  % off
+                </div>
               </div>
             </div>
             <div className={styles.courseSummary}>
