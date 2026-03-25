@@ -136,7 +136,7 @@ const page = () => {
             <div className={styles.pricingCtn}>
               <div className={styles.priceCtn}>
                 <span className={styles.price}>₹48999</span>
-                <span className={styles.mrp}>₹68999</span>
+                <span className={styles.mrp}>₹72999</span>
               </div>
               <div className={styles.discountCtn}>
                 <div className={styles.indicator}></div>
