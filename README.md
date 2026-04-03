@@ -4,13 +4,13 @@ Physiolution is a modern digital platform for selling physiotherapy courses, pro
 
 ---
 
-## Overview
+## 1. Overview
 
 This project was designed and developed to provide a scalable and high-performance platform for selling premium educational content in the healthcare domain.
 
 ---
 
-## 🎯 Key Highlights
+## 2. Key Highlights
 
 - Built a production-ready full-stack application  
 - Implemented secure payment and gated content delivery  
@@ -18,7 +18,7 @@ This project was designed and developed to provide a scalable and high-performan
 
 ---
 
-## Features
+## 3. Features
 
 - 📦 Digital course access & delivery  
 - 🔐 Secure checkout & payment flow  
@@ -27,7 +27,7 @@ This project was designed and developed to provide a scalable and high-performan
 
 ---
 
-## Tech Stack
+## 4. Tech Stack
 
 **Frontend**
 - Next.js (React Framework), TypeScript  
@@ -48,7 +48,7 @@ This project was designed and developed to provide a scalable and high-performan
 
 ---
 
-## Architecture
+## 5. Architecture
 
 The platform uses a serverless architecture:
 
@@ -59,14 +59,14 @@ The platform uses a serverless architecture:
 
 ---
 
-## Database
+## 6. Database
 
 - PostgreSQL database (via Supabase)  
 - Row Level Security (RLS) enabled 
 
 ---
 
-## Security
+## 7. Security
 
 - Environment variables used for sensitive credentials  
 - Server-side API handling for protected operations  
@@ -74,19 +74,19 @@ The platform uses a serverless architecture:
 
 ---
 
-## Live Project
+## 8. Live Project
 
-https://physiolution.co
-
----
-
-## Development
-
-Developed by [Yatharth Katyal] as part of client work at **Dexabl**  
+🔗 https://physiolution.co
 
 ---
 
-## License
+## 9. Development
+
+Designed and Developed by [Yatharth Katyal] as part of client work at **Dexabl**  
+
+---
+
+## 10. License
 
 This repository is a showcase of work developed by Dexabl.
 
