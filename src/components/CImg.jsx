@@ -4,7 +4,6 @@ export default function CImg({ src, width, height, alt }) {
   // react-markdown passes props as STRINGS
 const parsedWidth = parseInt(width);
 const parsedHeight = parseInt(height);
-console.log(src)
 
   return (
       <Image

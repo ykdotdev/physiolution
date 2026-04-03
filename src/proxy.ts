@@ -15,7 +15,6 @@ export default function middleware(req: NextRequest) {
     return NextResponse.next()
   }
 
-  console.log('LIVE:', process.env.NEXT_PUBLIC_LIVE)
 
   return NextResponse.redirect(new URL('/coming-soon', req.url))
 }

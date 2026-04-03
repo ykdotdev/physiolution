@@ -25,7 +25,6 @@ const CheckoutBtn = ({ pID, label }) => {
     const stockCheck = await stockCheckRes.json();
 
     if (!stockCheck.success) {
-      console.log("INSUFFICIENT STOCK");
       // TODO: show modal / toast
       await showToast("Item just went Out of Stock", "error");
       window.location.reload();

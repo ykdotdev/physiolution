@@ -19,7 +19,6 @@ export async function POST(req) {
       .select("current_stock", "1")
       .eq("id", product_id)
       .maybeSingle();
-    console.log("STOCK CHECK LOG",data, error?.message)
     if (error) throw error;
     
     return NextResponse.json({ success: data.current_stock >= qty });

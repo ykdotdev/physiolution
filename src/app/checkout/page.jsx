@@ -11,7 +11,6 @@ const page = async ({ searchParams }) => {
     .select("*")
     .eq("id", product_id)
     .maybeSingle();
-  // console.log("product", product);
 
   return <>{product ? <CheckoutClient product={product} /> : <Loading />}</>;
 };

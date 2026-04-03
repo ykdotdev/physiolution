@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Physiolution
 
-## Getting Started
+Physiolution is a modern digital platform for selling physiotherapy courses, providing users with secure access to premium educational content through a seamless and high-performance web experience.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project was designed and developed to provide a scalable and high-performance platform for selling premium educational content in the healthcare domain.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎯 Key Highlights
 
-## Learn More
+- Built a production-ready full-stack application  
+- Implemented secure payment and gated content delivery  
+- Designed using a scalable serverless architecture  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 📦 Digital course access & delivery  
+- 🔐 Secure checkout & payment flow  
+- 📱 Fully responsive design  
+- ⚡ Optimized performance & fast loading  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Frontend**
+- Next.js (React Framework), TypeScript  
+- Modern CSS
+- Modern UI/UX practices
+
+**Backend**
+- Next.js API Routes (serverless functions)
+
+**Database & Services**
+- Supabase manages database and backend
+- Cloudinary (Media Storage)
+- Razorpay Payment Gateway
+
+
+---
+
+## Architecture
+
+The platform uses a serverless architecture:
+
+- API routes handle all backend logic securely  
+- Sensitive operations are executed server-side  
+- Supabase manages database and backend services
+- Frontend communicates with backend via secure endpoints  
+
+---
+
+## Database
+
+- PostgreSQL database (via Supabase)  
+- Row Level Security (RLS) enabled 
+
+---
+
+## Security
+
+- Environment variables used for sensitive credentials  
+- Server-side API handling for protected operations  
+- Secure payment flow and controlled access to purchased content  
+
+---
+
+## Live Project
+
+https://physiolution.co
+
+---
+
+## Development
+
+Developed by [Yatharth Katyal] as part of client work at **Dexabl**  
+
+---
+
+## License
+
+This repository is a showcase of work developed by Dexabl.
+
+All rights to the original product belong to the respective client.  
+The code may not be copied, modified, or redistributed without explicit permission.

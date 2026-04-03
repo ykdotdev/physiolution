@@ -18,7 +18,6 @@ export async function POST(req) {
       .select("status", "paid")
       .eq("razorpay_order_id", order_id)
       .maybeSingle();
-    console.log("PAYMENT STATUS DATA",data)
     if (error) throw error;
     
     return NextResponse.json(data);

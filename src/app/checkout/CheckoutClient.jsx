@@ -25,8 +25,6 @@ const CheckoutClient = ({ product}) => {
       router.push("/products/tbmm-ces");
     }
   }, []);
-  // console.log("info", infoActive)
-  // console.log("product", product)
   const {
     register,
     getValues,
@@ -54,7 +52,6 @@ const CheckoutClient = ({ product}) => {
     totalPaise: 0,
     totalRupees: 0,
   });
-  // console.log("PAISE", totals.totalPaise)
   const [appliedPromoCode, setAppliedPromoCode] = useState(null);
 
   useEffect(() => {
@@ -100,18 +97,15 @@ const CheckoutClient = ({ product}) => {
   const handlePayment = async () => {
     try {
       setIsDisabled(true);
-      // 1️⃣ Get validated shipping details from form
+      // Get validated shipping details from form
       const formData = getValues();
-      // console.log("Shipping data:", formData);
 
-      // 2️⃣ Load Razorpay SDK
+      // Load Razorpay SDK
       const loaded = await loadRazorpay();
       if (!loaded || typeof window.Razorpay === "undefined") {
         alert("Razorpay SDK failed to load.");
         return;
       }
-      // console.log("appliedPromoCode: ", appliedPromoCode?.code)
-      // 3️⃣ Create order via API (Supabase RPC + Razorpay order)
       const res = await fetch("/api/createOrder", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -136,16 +130,12 @@ const CheckoutClient = ({ product}) => {
 
       const { order, razorpayOrder, error } = await res.json();
       if (error) {
-        // console.log("Order creation failed:", error);
         showToast("Stock Error", "error");
-        // router.back();
         return;
       }
 
-      // console.log("Supabase order:", order);
-      // console.log("Razorpay order:", razorpayOrder);
 
-      // 4️⃣ Open Razorpay modal
+      // Open Razorpay modal
       const options = {
         key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
         amount: razorpayOrder.amount, // paise
@@ -158,7 +148,6 @@ const CheckoutClient = ({ product}) => {
           contact: formData.phone,
         },
         handler: async (paymentResponse) => {
-          // console.log(paymentResponse)
           try {
             await fetch("/api/confirmPayment", {
               method: "POST",
@@ -167,21 +156,18 @@ const CheckoutClient = ({ product}) => {
                 order_id: order[0].order_id,
                 razorpay_payment_id: paymentResponse.razorpay_payment_id,
                 razorpay_order_id: paymentResponse.razorpay_order_id,
-                // razorpay_signature: paymentResponse.razorpay_signature,
                 status: "paid",
               }),
             });
 
             router.push(`/payment/?oID=${razorpayOrder.id}`);
           } catch (verifyError) {
-            // console.error("Payment verification failed:", verifyError);
             showToast("Payment verification failed", "error");
           }
         },
         theme: { color: "#000000" },
         modal: {
           ondismiss: async function () {
-            // console.log("Razorpay modal closed without payment");
             try {
               await fetch("/api/confirmPayment", {
                 method: "POST",

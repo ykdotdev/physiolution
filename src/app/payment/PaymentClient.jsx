@@ -28,7 +28,6 @@ const PaymentClient = ({ orderID }) => {
         });
 
         const data = await res.json();
-        // console.log("Payment status:", data);
         if (data?.status === "paid") {
           setStatus("success");
           setLoading(false);

@@ -27,8 +27,6 @@ export async function POST(req) {
     p_items: items,
     p_shipping: shipping_info,
   });
-  console.log("CURRENT ITEM ARRAY: ", items);
-  console.log("RPC returned order:", data);
 
   if (error)
     return new Response(JSON.stringify({ error: error.message }), {
