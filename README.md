@@ -34,6 +34,9 @@ This project was designed and developed to provide a scalable and high-performan
 - Modern CSS
 - Modern UI/UX practices
 
+**Design**
+- Figma (UI/UX design)
+
 **Backend**
 - Next.js API Routes (serverless functions)
 
