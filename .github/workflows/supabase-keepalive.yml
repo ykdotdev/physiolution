@@ -2,8 +2,8 @@ name: Keep Supabase Alive
 
 on:
   schedule:
-    # every 24 hours
-    - cron: "0 0 * * *"
+  # Every 5 days
+  - cron: "0 0 */5 * *"
 
   workflow_dispatch:
 
